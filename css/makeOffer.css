@@ -279,7 +279,7 @@
 	line-height: 28px;
 	margin: 0px;
 	padding-right: 75px;
-	padding-top: 18px; 
+	padding-top: 25px; 
 }
 .sign-date-divider{
 	border-bottom: 1px solid #e5e5e5;
@@ -305,6 +305,12 @@
 	margin: 0px;
 	padding-right: 80px;
 	padding-top: 18px; 
+}
+.hook-offer-value{
+	font-size: 21px;
+	line-height: 28px;
+	margin: 0px;
+	padding-right: 80px;
 }
 .cierralo-close-it-btn {
 	width: 118px;
@@ -359,21 +365,28 @@ input::-webkit-inner-spin-button {
 	padding-bottom: 5px;
 }
 .hook-offer-container{
-	padding-top: 98px;
+	padding-top: 85px;
 	width: 100%;
 }
 .hook-offer-divider{
 	border-bottom: 1px solid #e5e5e5;
 	height: 1px;
 	width: 40%;
-	margin-bottom: 7px;
+	margin-bottom: 0px;
 	margin-right: 10px;
 }
 .hook-offer-value-container{
 	height: 28px;
 	border-left: solid 1px #e66700;
+	margin-top: 0px;
+	padding-left: 6px;
+}
+.sign-date-input-container{
+	height: 28px;
+	border-left: solid 1px #e66700;
 	margin-top: -10px;
 	padding-left: 6px;
+	margin-top: 25px;
 }
 .offer-percentage{
 	background-color: #ffffff;
@@ -477,4 +490,13 @@ input::-webkit-inner-spin-button {
 }
 .hidden{
 	display: none;
+}
+#hook-offer-container.fix-paddings{
+	padding-top: 93px !important;
+}
+#sign-date-container.fix-paddings{
+	padding-top: 73px !important;
+}
+#terms-container.fix-paddings{
+	padding-top: 53px !important;
 }

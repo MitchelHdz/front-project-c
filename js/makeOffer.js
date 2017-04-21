@@ -27,12 +27,50 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+function removeHidden() {
+	var hiddens = document.getElementsByClassName("hidden");
+	var paddings = document.getElementsByClassName("fix-paddings");
+		while (hiddens.length)
+		    hiddens[0].classList.remove("hidden");
+		while (paddings.length)
+		    paddings[0].classList.remove("fix-paddings");
+}
+function greyHidden() {
+	removeHidden();
+	document.getElementById('hook-with').classList.add('hidden');
+	document.getElementById('hook-container-without').classList.add('hidden');
+	document.getElementById('hook-value-without').classList.add('hidden');
+	document.getElementById('date-with').classList.add('hidden');
+	document.getElementById('date-without').classList.add('hidden');
+	document.getElementById('delivery-with').classList.add('hidden');
+	document.getElementById('delivery-grey-without').classList.add('hidden');
+	document.getElementById('delivery-container-without').classList.add('hidden');
+	document.getElementById('hook-offer-container').classList.add('fix-paddings');
+	document.getElementById('sign-date-container').classList.add('fix-paddings');
+	document.getElementById('terms-container').classList.add('fix-paddings');
+}
 document.getElementById('withGrey').addEventListener('click', function () {
 	if (this.classList.contains('active')) {
 		document.getElementById('withoutGrey').classList.remove('active');
 	} else {
 		this.classList.add('active');
 		document.getElementById('withoutGrey').classList.remove('active');
+	}
+	withWhite = document.getElementById('withWhite');
+	withoutWhite = document.getElementById('withoutWhite');
+	if(withWhite.classList.contains('active')){
+		removeHidden();
+		document.getElementById('hook-without').classList.add('hidden');
+		document.getElementById('hook-value-without').classList.add('hidden');
+		document.getElementById('date-without').classList.add('hidden');
+		document.getElementById('delivery-without').classList.add('hidden');
+	}
+	else if (withoutWhite.classList.contains('active')){
+		removeHidden();
+		document.getElementById('hook-with').classList.add('hidden');
+		document.getElementById('hook-container-without').classList.add('hidden');
+		document.getElementById('date-with').classList.add('hidden');
+		document.getElementById('delivery-grey-without').classList.add('hidden');
 	}
 });
 document.getElementById('withoutGrey').addEventListener('click', function () {
@@ -42,17 +80,26 @@ document.getElementById('withoutGrey').addEventListener('click', function () {
 		this.classList.add('active');
 		document.getElementById('withGrey').classList.remove('active');
 	}
+	greyHidden();
 });
 document.getElementById('withWhite').addEventListener('click', function () {
 	if (this.classList.contains('active')) {
 		document.getElementById('withoutWhite').classList.remove('active');
-		document.getElementById('hook-without').classList.add('hidden');
-		document.getElementById('hook-with').classList.remove('hidden');
 	} else {
 		this.classList.add('active');
 		document.getElementById('withoutWhite').classList.remove('active');
+	}
+	withGrey = document.getElementById('withGrey');
+	withoutGrey = document.getElementById('withoutGrey');
+	if(withGrey.classList.contains('active')){
+		removeHidden();
 		document.getElementById('hook-without').classList.add('hidden');
-		document.getElementById('hook-with').classList.remove('hidden');
+		document.getElementById('hook-value-without').classList.add('hidden');
+		document.getElementById('date-without').classList.add('hidden');
+		document.getElementById('delivery-without').classList.add('hidden');
+	}
+	else if (withoutGrey.classList.contains('active')){
+		greyHidden();
 	}
 });
 document.getElementById('withoutWhite').addEventListener('click', function () {
@@ -65,5 +112,17 @@ document.getElementById('withoutWhite').addEventListener('click', function () {
 		document.getElementById('withWhite').classList.remove('active');
 		document.getElementById('hook-with').classList.add('hidden');
 		document.getElementById('hook-without').classList.remove('hidden');
+	}
+	withGrey = document.getElementById('withGrey');
+	withoutGrey = document.getElementById('withoutGrey');
+	if(withGrey.classList.contains('active')){
+		removeHidden();
+		document.getElementById('hook-with').classList.add('hidden');
+		document.getElementById('hook-container-without').classList.add('hidden');
+		document.getElementById('date-with').classList.add('hidden');
+		document.getElementById('delivery-with').classList.add('hidden');
+	}
+	else if (withoutGrey.classList.contains('active')){
+		greyHidden();
 	}
 });

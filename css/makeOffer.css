@@ -64,6 +64,7 @@
 	width: 401px;
 	padding-top: 25px;
 	padding-bottom: 30px;
+	margin-top: -4px;
 }
 .service-container{
 	text-align: center;
@@ -237,6 +238,14 @@
 	margin: 0px;
 	margin-top: -20px;
 }
+.hook-text-large{
+	font-size: 14px;
+	line-height: 19px;
+	text-align: right;
+	width: 149px;
+	margin: 0px;
+	margin-top: -40px;
+}
 .hook-divider{
 	border-bottom: 1px solid #e5e5e5;
 	height: 1px;
@@ -356,7 +365,7 @@ input::-webkit-inner-spin-button {
 .hook-offer-divider{
 	border-bottom: 1px solid #e5e5e5;
 	height: 1px;
-	width: 174px;
+	width: 40%;
 	margin-bottom: 7px;
 	margin-right: 10px;
 }
@@ -388,7 +397,7 @@ input::-webkit-inner-spin-button {
 .sign-date-offer-divider{
 	border-bottom: 1px solid #e5e5e5;
 	height: 1px;
-	width: 174px;
+	width: 40%;
 	margin-bottom: 0px;
 	margin-right: 10px;
 }
@@ -465,4 +474,7 @@ input::-webkit-inner-spin-button {
 	text-align: center;
 	width: 397px;
 	margin: auto;
+}
+.hidden{
+	display: none;
 }

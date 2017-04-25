@@ -280,3 +280,9 @@
 .cursor-pointer:hover{
 	cursor: pointer;
 }
+.modal-open{
+	display: block !important;
+}
+#body.modal-open {
+	overflow: hidden;
+}

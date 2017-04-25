@@ -562,3 +562,9 @@ input::-webkit-inner-spin-button {
 .sign-date-value-container{
 	margin-top: 24px;
 }
+.modal-open{
+	display: block !important;
+}
+#body.modal-open {
+	overflow: hidden;
+}

@@ -27,6 +27,16 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+function focusOnInput() {
+	var element = document.getElementById('offerPercentage');
+	console.log('element');
+    element.focus();
+    element.selectionStart = element.selectionEnd = element.value.length;
+    setTimeout(function () { element.focus(); }, 1);
+}
+window.onload = function() {
+	focusOnInput();
+}
 function removeHidden() {
 	var hiddens = document.getElementsByClassName("hidden");
 	var paddings = document.getElementsByClassName("fix-paddings");
@@ -70,7 +80,7 @@ document.getElementById('withGrey').addEventListener('click', function () {
 		document.getElementById('hook-with').classList.add('hidden');
 		document.getElementById('hook-container-without').classList.add('hidden');
 		document.getElementById('date-with').classList.add('hidden');
-		document.getElementById('delivery-grey-without').classList.add('hidden');
+		document.getElementById('delivery-with').classList.add('hidden');
 	}
 });
 document.getElementById('withoutGrey').addEventListener('click', function () {

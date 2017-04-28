@@ -799,3 +799,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .share-container{
     justify-content: left !important;
 }
+.building-block-link{
+    text-decoration: none;
+}

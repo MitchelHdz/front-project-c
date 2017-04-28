@@ -1,18 +1,20 @@
 var iconHeart = document.getElementsByClassName("icon-love");
 
-var toggleFav = function() {
-   if(this.classList.contains('fa-heart-o')){
-		this.classList.add('fa-heart');
-		this.classList.remove('fa-heart-o');
-	}
-	else if (this.classList.contains('fa-heart')){
-		this.classList.add('fa-heart-o');
-		this.classList.remove('fa-heart');
-	}
-};
-
 for (var i = 0; i < iconHeart.length; i++) {
-    iconHeart[i].addEventListener('click', toggleFav, false);
+    iconHeart[i].addEventListener('click', function( e ){
+	    e = window.event || e; 
+	    if(this === e.target) {
+	        e.preventDefault();
+	        if(this.classList.contains('fa-heart-o')){
+				this.classList.add('fa-heart');
+				this.classList.remove('fa-heart-o');
+			}
+			else if (this.classList.contains('fa-heart')){
+				this.classList.add('fa-heart-o');
+				this.classList.remove('fa-heart');
+			}
+	    }
+	});
 }
 function getVals(){
   // Get slider values
@@ -38,7 +40,6 @@ window.onload = function(){
             sliders[y].oninput = getVals;
             // Manually trigger event first time to display values
             sliders[y].oninput();
-            console.log('slide');
           }
         }
       }

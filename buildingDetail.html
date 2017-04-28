@@ -61,8 +61,17 @@
       <main id="main">
         
     <div class="building-header">
-        <div class="building-parallax">
-            
+            <div class="building-parallax cursor-pointer openGalleryModal" id="openGalleryModal" imageSrc="../img/photo532577139161512309.jpg">
+                
+            </div>
+    </div>
+    <div id="galleryModal" class="modal">
+        <!-- Modal content -->
+        <div class="gallery-modal-content cierralo-flex-colum">
+            <div class="modal-close-btn-container cursor-pointer">
+                <span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
+            </div>
+            <img src="" alt="" class="gallery-modal-image" id="galleryImage">
         </div>
     </div>
     <div class="building-main">
@@ -70,10 +79,10 @@
             <div class="more-button-container cursor-pointer">
                 <img src="./img/icons/more.png" alt="" class="more-icon-gallery">
             </div>
-            <img src="./img/casa@3x.jpg" alt="" class="image-gallery">
-            <img src="./img/casa@3x.jpg" alt="" class="image-gallery">
-            <img src="./img/casa@3x.jpg" alt="" class="image-gallery">
-            <img src="./img/casa@3x.jpg" alt="" class="image-gallery">
+            <img src="./img/casa@3x.jpg" alt="" class="image-gallery openGalleryModal cursor-pointer" imageSrc="../img/photo532577139161512309.jpg">
+            <img src="./img/casa@3x.jpg" alt="" class="image-gallery openGalleryModal cursor-pointer" imageSrc="../img/photo532577139161512309.jpg">
+            <img src="./img/casa@3x.jpg" alt="" class="image-gallery openGalleryModal cursor-pointer" imageSrc="../img/photo532577139161512309.jpg">
+            <img src="./img/casa@3x.jpg" alt="" class="image-gallery openGalleryModal cursor-pointer" imageSrc="../img/photo532577139161512309.jpg">
         </div>
         <div class="building-information-container cierralo-flex-row-flex-start">
             <div class="owner-information-container cierralo-flex-colum">
@@ -213,8 +222,29 @@ Ciudad de México.</p>
                 </div>
             </div>
         </div>
-        <div class="map-container inline-block">
-            <img src="./img/83015-just-a-grey-map@3x.jpg" alt="" class="map-container-test">
+        <div class="map-container inline-block" id="googleMap">
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwzwWOG7rzZc7soDadgDWmVTpMnbMIQm4&sensor=false">
+            </script>
+            <script>
+                var map;
+                function initialize() {
+                    var myLatLng = {lat: 19.4192741, lng: -99.1646228};
+                    var mapOptions = {
+                    zoom: 15,
+                    center: new google.maps.LatLng(19.4192741,-99.1646228),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+                    map = new google.maps.Map(document.getElementById('googleMap'),
+                    mapOptions);
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Hello World!'
+                    });
+                }
+
+                google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
         </div>
         <div class="building-body-divider">
                     

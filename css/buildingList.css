@@ -753,15 +753,15 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .slider-value-container{
     background-color: #e66700;
     text-align: center;
-    width: 34px;
-    height: 12px;
+    width: 45px;
+    height: 13px;
     margin-bottom: 5px;
 }
 .slider-value{
     color: #FFFFFF;
-    font-size: 7px;
+    font-size: 9px;
     text-align: center;
-    padding-top: 2.5px;
+    padding-top: 0.5px;
 }
 .cierralo-slider{
     padding-top: 25px;

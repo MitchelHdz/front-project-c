@@ -19,6 +19,8 @@ var galleryModal = document.getElementById('galleryModal');
 // Get the button that opens the modal
 var galleryBtns = document.getElementsByClassName("openGalleryModal");
 var galleryImage = document.getElementById("galleryImage");
+var leftArrow = document.getElementById("arrow-left");
+var rightArrow = document.getElementById("arrow-right");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 var body = document.getElementById('body');
@@ -29,6 +31,53 @@ function openGallery() {
 	galleryImage.src=gallerySrc;
 	body.classList.add('modal-open');
 
+}
+function carousel(arrow) {
+	var carousel = document.getElementsByClassName('image-gallery');
+	var carouselBox = document.getElementById('carouselBox');
+	console.log(carousel);
+	for (var i = 0; i < carousel.length; i++) {
+		console.log(galleryImage.getAttribute("src") + '--' + carousel[i].getAttribute("imageSrc"));
+		if (galleryImage.getAttribute("src") == carousel[i].getAttribute("imageSrc")){
+			if(arrow.getAttribute('id') == 'arrow-left'){
+				if((i - 1) < 0){
+					image = carouselBox.lastElementChild;
+					console.log(image);
+					galleryImage.src= image.getAttribute("imageSrc");
+					console.log('ultimo');
+					break;
+				}
+				else{
+					galleryImage.src= carousel[i - 1].getAttribute("imageSrc");
+					console.log('antes');
+					break;
+				}
+			}
+			else if(arrow.getAttribute('id') == 'arrow-right'){
+				console.log(i);
+				if((i + 1) == carousel.length){
+					image = carouselBox.children[0];
+					console.log(image);
+					galleryImage.src= image.getAttribute("imageSrc");
+					console.log('primero');
+					break;
+				}
+				else{
+					galleryImage.src = carousel[i + 1].getAttribute("imageSrc");
+					console.log('despues');
+					break;
+				}
+			}
+		}
+	}
+}
+leftArrow.onclick = function() {
+	console.log('izquierda');
+	carousel(this);
+}
+rightArrow.onclick = function() {
+	console.log('derecha');
+	carousel(this);
 }
 for (var i = 0; i < galleryBtns.length; i++) {
     galleryBtns[i].addEventListener('click', openGallery, false);

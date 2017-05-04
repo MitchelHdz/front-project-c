@@ -38,6 +38,7 @@ window.onload = function(){
         for( var y = 0; y < sliders.length; y++ ){
           if( sliders[y].type ==="range" ){
             sliders[y].oninput = getVals;
+            
             // Manually trigger event first time to display values
             sliders[y].oninput();
           }

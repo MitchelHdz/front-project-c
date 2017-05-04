@@ -90,7 +90,7 @@ span.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-	if (event.target == modal) {
+	if (event.target == galleryModal) {
 		galleryModal.classList.remove('modal-open');
 		body.classList.remove('modal-open');
 	}

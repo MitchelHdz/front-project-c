@@ -1,0 +1,179 @@
+.post-apartment-title {
+  width: 100%;
+  margin: 67px 0 50px 0;
+  text-align: center;/*Centra el contenido*/
+}
+
+.post-apartment-title h1 {
+  font-family: 'HelveticaNeue-Medium';
+  font-size: 25px;
+  color: #625e63;
+  margin: 15px  0;
+}
+
+.post-apartment-title h2 {
+  font-family: 'HelveticaNeue';
+  font-size: 15px;
+  color: #9b9b9b;
+  margin: 0;
+}
+
+.post-apartments-divider {
+  background-color: #e5e5e5;
+  width: 309px;
+  height: 1px;
+  margin: 92px auto 0 auto;
+}
+
+.post-apartment-instructions {
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.post-apartment-instructions .instructions {
+  width: 390px;
+  font-family: 'HelveticaNeue-Medium';
+  font-size: 17px;
+  color: #625e63;
+  text-align: center;
+}
+
+.apartment-adress {
+  margin-top: 52px;
+  font-family: 'HelveticaNeue';
+  font-size: 15px;
+  color: #9b9b9b;
+  margin-top: ;
+}
+
+.adress-row {
+  display: flex;
+  justify-content: center;
+}
+
+.apartment-adress .input-container {
+  border: solid 1px #e5e5e5;
+  display: inline-block;
+  padding: 12px 19px 13px 19px;
+  height: 42px;
+  box-sizing: border-box;
+}
+
+.apartment-adress .input-name {
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.apartment-adress .adress-street {
+  width: 319px;
+  margin-right: 15px;
+}
+
+.apartment-adress .adress-street input {
+  width: 230px;
+}
+
+.apartment-adress .adress-number {
+  width: 121px;
+}
+
+.apartment-adress .adress-number input {
+  width: 42px;
+}
+.step-bubbles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+  
+.bubble {
+  color: #ffffff;
+  font-family: 'HelveticaNeue';
+  background-color: #e5e5e5;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+
+}
+
+.step-bubbles .step-in {
+
+  background-color: #e66700;
+}
+
+.step:nth-child(odd)::after {
+  position: absolute;
+  font-size: 12px;
+  font-family: 'HelveticaNeue-Thin';
+  color: #4a4a4a;
+  margin-top: 16px;
+}
+
+.step:nth-child(1)::after {
+  content: "Características";
+  margin-left: -19px;
+}
+
+.step:nth-child(3)::after {
+  content: "Fotos";
+  margin-left: 3.5px;
+}
+
+.step:nth-child(5)::after {
+  content: "Precio";
+  margin-left: 1.5px;
+}
+
+.step:nth-child(7)::after {
+  content: "T&C";
+  margin-left: 7px;
+}
+
+.step:nth-child(9)::after {
+  content: "Documentación";
+  margin-left: -19px;
+}
+
+.linkage {
+  display: inline-block;
+  background-color: #e5e5e5;
+  height: 1px;
+  width: 68px;
+
+}
+.user-nav {
+  width: 100%;
+  height: 42px;
+  background-color: #dbdbdb;
+  padding: 0 5.175%;
+}
+
+.user-nav .tab {
+  box-sizing: border-box;
+  height: 100%;
+  display: inline-block;
+  margin-right: 30px;
+  padding: 13px 0;
+  font-family: 'HelveticaNeue';
+  font-size: 14px;
+  color: #757176;
+}
+
+.user-nav .tab :last-child {
+  box-sizing: border-box;
+  height: 100%;
+  display: inline-block;
+  margin-right: 0;
+}
+
+.user-nav .tab.active {
+  border-bottom: 3px solid #e66700;
+}

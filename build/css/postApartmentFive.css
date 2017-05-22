@@ -1,0 +1,244 @@
+.instructions.last-step{
+	width: 582px;
+	padding-top: 11px;
+}
+.owner-instruction-text{
+	width: 399px;
+	font-size: 15px;
+	text-align: center;
+}
+.owner-isntruction-box{
+	padding-top: 88px;
+}
+.owner-input-list-container{
+	padding-top: 36px;
+}
+.owner-input{
+	box-sizing: border-box;
+	width: 212px;
+	height: 42px;
+	background-color: #FFFFFF;
+	border: solid 1px #e5e5e5;
+	padding-left: 20px;
+	font-size: 15px;
+	color: #9b9b9b;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.owner-input::placeholder{
+	color: #9b9b9b;
+	font-family: 'HelveticaNeue'
+}
+.add-owner-text{
+	font-size: 13px;
+	width: 70px;
+}
+.add-owner-icon{
+	font-size: 33px !important;
+}
+.add-owner-box{
+	width: 145px;
+	height: 42px;
+	border: dashed 1px #e5e5e5;
+	border-radius: 10px;
+	justify-content: space-around;
+	margin: auto;
+	margin-top: 27px;
+}
+.instructions.last-step-second-section{
+	width: 500px;
+	padding-top: 60px;
+}
+.post-apartments-divider-five{
+	margin-top: 66px;
+	width: 488px;
+	height: 1px;
+	background-color: #e5e5e5;
+}
+.owner-email-container{
+	padding-top: 50px;
+	padding-bottom: 61px;
+}
+.owner-email-input{
+	box-sizing: border-box;
+	width: 263px;
+	height: 42px;
+	background-color: #FFFFFF;
+	border: solid 1px #e5e5e5;
+	padding-left: 20px;
+	font-size: 15px;
+	color: #4a4a4a;
+}
+.owner-email-input::placeholder{
+	color: #4a4a4a;
+	font-family: 'HelveticaNeue'
+}
+.files-title-box{
+	font-size: 15px;
+	width: 290px;
+	text-align: center;
+}
+.files-subtitle-box{
+	font-size: 13px;
+	width: 348px;
+	text-align: center;
+	padding-bottom: 90px;
+}
+.files-icon-box{
+	padding-top: 36px;
+	padding-bottom: 24px;
+}
+.file-info-dot{
+	width: 24px;
+	height: 24px;
+	color: #ffffff;
+	background-color: #f69718;
+	text-align: center;
+	padding-top: 5px;
+	box-sizing: border-box;
+	border-radius: 40px;
+	font-size:11px;
+	margin-right: 34px;
+}
+.upload-file-button{
+	background-color: #f69718;
+  border-radius: 100px;
+  width: 154px;
+  height: 39px;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+}
+#fileinput{
+	width: 154px;
+  height: 39px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+.upload-file-icon{
+	width: 13px;
+	height: 17px;
+	margin-right: 15px;
+}
+.upload-plus-icon-box{
+	width: 28px;
+	height: 28px;
+	box-sizing: border-box;
+	text-align: center;
+	border: dashed 1px #e5e5e5;
+	padding-top: 5px;
+	margin-left: 43px;
+}
+.upload-plus-icon{
+	font-size: 16px !important;
+}
+.file-name-box{
+	width: 180px;
+}
+.file-name{
+	font-size: 15px;
+}
+.file-input-box{
+	margin-left: 90px;
+	width: 282px;
+	justify-content: flex-start;
+}
+.files-item{
+	padding-bottom: 59px;
+	padding-left: 100px;
+}
+.rfc-input{
+	box-sizing: border-box;
+	width: 282px;
+	height: 40px;
+	background-color: #FFFFFF;
+	border: solid 1px #e5e5e5;
+	padding-left: 20px;
+	font-size: 15px;
+	color: #9b9b9b;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.arrow-file-icon{
+	width: 13px;
+	height: 9px;
+}
+.arrow-file-circle{
+	width: 33px;
+	height: 33px;
+	background-color: #e66700;
+	border-radius: 50px;
+	margin-left: 63px;
+}
+.five-checkbox{
+  border-radius: 0px;
+    background-color: white;
+    border: 0;
+    -webkit-appearance: none;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+    border: solid 1px #e6e6e6 !important;
+    transition: all 0.1s linear;
+  -webkit-transition:: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+}
+.five-checkbox-box{
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 33px;
+  padding-left: 33px;
+}
+.five-checkbox-text{
+  font-size: 14px;
+  width: 261px;
+}
+.five-checkbox:checked{
+  border-radius: 0px;
+    background-color: #e66700;
+    border: 0;
+    -webkit-appearance: none;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    border: solid 1px #e6e6e6 !important;
+}
+.last-files-divider{
+	margin-top: 2px;
+	width: 155px;
+	height: 1px;
+	background-color: #e5e5e5;
+}
+.step-five-terms-box{
+	padding-top: 36px;
+}
+.end-button-box{
+	background-color: #e66700;
+  border-radius: 100px;
+  width: 143px;
+  height: 43px;
+  font-size: 14px;
+  padding-top: 6px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.finish-modal-button-box{
+  box-sizing: border-box;
+  width: 104px;
+  height: 36px;
+  background-color: #f69718;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: -5px;
+}

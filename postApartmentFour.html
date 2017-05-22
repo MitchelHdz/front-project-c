@@ -97,7 +97,7 @@
 
         
         
-            <main id="main" class="web-area">
+            <main id="main" class="">
         
             
 <div class="grey-navbar cierralo-flex-row-start">
@@ -123,57 +123,113 @@
     </div>
   </a>
 </div>
-  <div class="profile-edit-container cierralo-flex-colum">
-    <div class="user-header-info">
-      <div class="user-photo-container inline-block">
-        <img src="./img/dude.png" alt="" class="user-seller-photo">
+<div id="alertModal" class="modal">
+    <!-- Modal content -->
+    <div class="alert-modal-content cierralo-flex-colum">
+      <div class="modal-close-btn-container">
+        <span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
       </div>
-      <div class="user-info-container inline-block">
-        <h1 class="user-seller-name cierralo-purplish-grey cierralo-font-helveltica-bold">José Martínez</h1>
-        <p class="user-seller-membership cierralo-purplish-grey cierralo-font-helveltica-neue-light">Miembro desde Septiembre 2016</p>
-        <div class="edit-stars-container">
-          <i class="fa fa-star rate-star" aria-hidden="true"></i>
-          <i class="fa fa-star rate-star" aria-hidden="true"></i>
-          <i class="fa fa-star rate-star" aria-hidden="true"></i>
-          <i class="fa fa-star-half-o rate-star" aria-hidden="true"></i>
-          <i class="fa fa-star-o rate-star" aria-hidden="true"></i>
-        </div>
-        <div class="profile-edit-info-box">
-          <a href="" class="edit-profile-link">
-            <p class="inline-block cierralo-font-helveltica-medium cierralo-purplish-grey-two edit-contact-mail">carloslpz@gmail.com</p>
-          </a>
-          <i class="fa fa-lock edit-profile-icon" aria-hidden="true"></i>
-          <i class="fa fa-pencil-square-o edit-profile-icon" aria-hidden="true"></i>
-        </div>
-        <div class="profile-edit-info-box">
-          <a href="" class="edit-profile-link">
-            <p class="inline-block cierralo-font-helveltica-medium cierralo-purplish-grey-two edit-contact-mail">55 6782 4523</p>
-          </a>
-          <i class="fa fa-lock edit-profile-icon" aria-hidden="true"></i>
-          <i class="fa fa-pencil-square-o edit-profile-icon" aria-hidden="true"></i>
-        </div>
+      <div class="arrow-check-circle cierralo-flex-row cursor-pointer">
+        <img src="./img/icons/shape@3x.png" alt="" class="arrow-check-icon">
       </div>
-    </div>
-    <div class="edit-profile-divider">
-
-    </div>
-    <div class="change-password-title-container">
-      <h1 class="change-password-title-center cierralo-purplish-grey-two cierralo-font-helveltica-medium inline-block">Cambiar contraseña</h1>
-      <div class="inline-block arrow-down">
-        
+      <div class="alert-modal-body">
+        <p class="alert-text-two apartment cierralo-font-helveltica-neue-light cierralo-purplish-grey letter-spacing-dot-three">Haz terminado de llenar los términos y condiciones con los que venderías tu departamento.</p>
       </div>
-    </div>
-    <div class="cierralo-pre-footer-divider cierralo-flex-row">
-
+      <div class="modal-footer">
+        <h1 class="alert-text-three apartment cierralo-font-helveltica-neue-light cierralo-white-text letter-spacing-dot-three">El último paso consiste en subir la documentación necesaria para realizar la venta de un departamento.</h1>
+        <a href="./postApartmentFive.html" class="apartment-link">
+          <div class="continue-modal-button-box">
+            <div class="continiue-modal-button-text cierralo-font-helveltica-neue cierralo-white-text">Continuar</div>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
+<main id="main">
+    <nav class="user-nav">
+      <a href="#"><div class="tab active">Publicar departamento</div></a>
+      <a href="#"><div class="tab">Procesos actuales</div></a>
+      <a href="#"><div class="tab">Citas</div></a>
+    </nav>
+    <div class="post-apartment-title">
+      <h1>Publica un nuevo departamento</h1>
+      <h2>Documentación</h2>
+    </div>
+    <div class="step-bubbles">
+      <div class="step">
+        <div class="bubble">1</div>
+      </div>
+      <div class="linkage"></div>
+      <div class="step">
+        <div class="bubble">2</div>
+      </div>
+      <div class="linkage"></div>
+      <div class="step">
+        <div class="bubble">3</div>
+      </div>
+      <div class="linkage"></div>
+      <div class="step">
+        <div class="bubble">4</div>
+      </div>
+      <div class="linkage"></div>
+      <div class="step">
+        <div class="bubble step-in">5</div>
+      </div>
+    </div>
+    <div class="post-apartment-instructions four-step-padding cierralo-flex-colum">
+      <p class="instructions">A continuación selecciona el tipo de estructura para tu departamento</p>
+      <p class="structure-top-text cierralo-purple-grey cierralo-font-helveltica-neue-light">Si deseas conocer más acerca es estás dos estructuras de compra-venta <a href="./buildingDetail.html" class="terms-link-text cierralo-purple-grey cursor-pointer">haz click aquí</a></p>
+    </div>
+    <div class="structure-container cierralo-flex-colum">
+      <div class="structure-options-container cierralo-flex-row">
+        <div class="domain-container">
+          <div class="cierralo-flex-colum with-domain-box active cursor-pointer structure-domain-btn" id="withGrey">
+            <p class="with-domain-word cierralo-warm-grey cierralo-font-helveltica-bold letter-spacing-dot-one">CON</p>
+            <p class="with-domain-text cierralo-warm-grey cierralo-font-helveltica-neue-light letter-spacing-dot-one">reserva de dominio</p>
+          </div>
+          <p class="tiny-text-domain cierralo-warm-grey cierralo-font-helveltica-neue">Con plazo de entrega</p>
+        </div>
+        <div class="domain-container">
+          <div class="cierralo-flex-colum without-domain-box cursor-pointer structure-domain-btn" id="withoutGrey">
+            <p class="without-domain-word cierralo-warm-grey cierralo-font-helveltica-bold letter-spacing-dot-one">SIN</p>
+            <p class="without-domain-text cierralo-warm-grey cierralo-font-helveltica-neue-light letter-spacing-dot-one">reserva de dominio</p>
+          </div>
+          <p class="tiny-text-domain second cierralo-warm-grey cierralo-font-helveltica-neue">Entrega inmediata</p>
+        </div>
+      </div>
+      <div class="structure-inputs-container cierralo-flex-row first">
+        <p class="cierralo-font-helveltica-neue cierralo-warm-grey structure-domain-text">Enganche</p>
+        <div class="input-firt-pay-box">
+          <input type="text" name="" value="" placeholder="" class="structure-domain-input cierralo-font-helveltica-neue cierralo-warm-grey">
+          <p class="structure-first-pay-text cierralo-font-helveltica-neue cierralo-warm-grey">$500,000 MXN de enganche</p>
+        </div>
+      </div>
+      <div class="structure-inputs-container cierralo-flex-row">
+        <p class="cierralo-font-helveltica-neue cierralo-warm-grey structure-domain-text">Fecha de firma y pago de anticipo, no antes del</p>
+          <input type="text" name="" value="" placeholder="" class="structure-domain-input cierralo-font-helveltica-neue cierralo-warm-grey">
+      </div>
+      <div class="structure-inputs-container cierralo-flex-row last">
+        <p class="cierralo-font-helveltica-neue cierralo-warm-grey structure-domain-text">Fecha de entrega y liquidación, no antes del</p>
+          <input type="text" name="" value="" placeholder="" class="structure-domain-input cierralo-font-helveltica-neue cierralo-warm-grey">
+      </div>
+      <div class="last-section-buttons-box second-step cierralo-flex-row">
+        <a href="" class="apartment-link">
+          <div class="return-button-box">
+          <img src="./img/icons/page-1@3x2.png" class="return-arrow-icon inline-block">
+          <p class="cierralo-font-helveltica-neue cierralo-warm-grey inline-block return-button-text">Atrás</p>
+          </div>
+        </a>
+        <a href="#" class="apartment-link" id="openModal">
+          <div class="continue-button-box">
+            <p class="cierralo-font-helveltica-neue cierralo-white-text">Continuar</p>
+          </div>
+        </a>
+      </div>
+      <div class="cierralo-pre-footer-divider cierralo-flex-row"></div>
+    </div>
+  </main>
 
         </main>
-        
-            <div class="mobile-alert-container cierralo-flex-colum">
-	<h1 class="mobile-alert-title cierralo-orange-text letter-spacing-dot-six cierralo-font-helveltica-bold">¡Lo sentimos!</h1>
-	<p class="mobile-alert-text cierralo-purplish-grey letter-spacing-dot-six cierralo-font-helveltica-neue-light">Para poder ver esta sección es necesario iniciar sesión en un navegador web.</p>
-</div>
         
       <footer class="site-footer">
   <div class="footer cierralo-font-helveltica-thin" role="contentinfo">
@@ -229,6 +285,8 @@
     <script src="./js/front_project_c.js"></script>
     
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        
+            <script src="./js/postApartmentFour.js"></script>
         
         <script src="./js/navbar.js"></script>
     

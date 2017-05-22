@@ -40,6 +40,14 @@
     <link rel="stylesheet" href="./css/schedule.css">
     <!--Schedule css file-->
     <link rel="stylesheet" href="./css/postAparmentFeatures.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentTwo.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentThree.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentFour.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentFive.css">
     <!--Slick css file-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
@@ -131,6 +139,61 @@
             </div>
         </div>
     </div>
+    <div id="scheduleModal" class="scheduling-modal">
+      <!-- Modal content -->
+      <div class="scheduling-modal-content cierralo-flex-colum">
+        <div class="modal-close-btn-container">
+          <span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
+        </div>
+        <div class="scheduling-alert-modal-body cierralo-flex-colum">
+          <p class="schedule-modal-title cierralo-grey-text cierralo-font-helveltica-medium letter-spacing-dot-one">Agendar visita</p>
+          <p class="schedule-modal-subtitle cierralo-grey-text cierralo-font-helveltica-medium letter-spacing-dot-one">Selecciona la fecha de visita</p>
+          <div class="scheduling-modal-divider"></div>
+          <div class="select-dater-box">
+            <div id="datepicker">
+          
+            </div>
+          </div>
+          <div class="scheduling-modal-divider"></div>
+            <div class="cierralo-flex-row">
+                <div class="hour-silder-icon-box">
+                    <img src="./img/icons/Reloj.png" class="hour-slider-icon">
+                </div>
+                <div class="hour-slider">
+                   <div>
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">08:00</div>
+                   </div> 
+                   <div>
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">09:00</div>
+                   </div> 
+                   <div>
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">10:00</div>
+                   </div> 
+                   <div>
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">11:00</div>
+                   </div> 
+                   <div>
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">12:00</div>
+                   </div> 
+                   <div>
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">13:00</div>
+                   </div> 
+                </div>
+            </div>
+          <div class="scheduling-modal-divider"></div>
+          <div class="cierralo-flex-row modal-credential-container">
+              <div class="credential-text-box">
+                  <p class="credential-title"></p>
+                  <p class="credential-text"></p>
+                  <div class="credential-button">
+                      <p class="credential-button-text">Agendar </p>
+                  </div>
+              </div>
+              <div class="credential-dropzone"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="building-main onload">
         <div class="galery-container cierralo-flex-row-flex-start">
             <div class="more-button-container cursor-pointer">
@@ -207,7 +270,7 @@ Ciudad de México.</p>
                 </div>
                 <div class="building-buttons-container">
                     <a href="./login.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-make-offer-building-btn cierralo-btn-secondary cursor-pointer">Realizar oferta</button></a>
-                    <a href="./login.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-date-building-btn cierralo-btn-secondary cursor-pointer">Agendar cita</button></a>
+                    <a href="#" id="openModal"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-date-building-btn cierralo-btn-secondary cursor-pointer">Agendar cita</button></a>
                 </div>
             </div>
             <div class="building-share-container">
@@ -368,7 +431,19 @@ Ciudad de México.</p>
     
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
         
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.js"></script>
             <script src="./js/buildingDetail.js"></script>
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+            <script type="text/javascript">
+              $(".hour-slider").slick({
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 5,
+                slidesToScroll: 5
+              });
+            </script>
         
         <script src="./js/navbar.js"></script>
     

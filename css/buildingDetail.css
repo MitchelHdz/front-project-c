@@ -309,3 +309,49 @@
     -o-transition: all 3s ease-out;  
     transition: all 3s ease-out;
 }
+.schedule-modal-title{
+	font-size: 25px;
+	padding-top: 32px;
+}
+.schedule-modal-subtitle{
+	font-size: 17px;
+	padding-top: 11px;
+
+}
+.hour-slider-icon{
+	width: 26px;
+	height: 26px;
+}
+.hourslider-text{
+	font-size: 16px;
+	width: 60px !important;
+	text-align: center;
+}
+.slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide {
+  margin: 10px 20px;
+}
+
+.slick-slide div {
+  width: 100%;
+  transform: scale(0.9);
+}
+.slick-dotted .slick-current img {
+  transform: scale(1.1);
+}
+.hour-slider{
+	width: 406px;
+}
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 306px !important;
+    box-sizing: border-box;
+}

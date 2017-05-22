@@ -1,0 +1,64 @@
+.apartment-price-text{
+	width: 187px;
+	text-align: right;
+	font-size: 15px;
+	margin-right: 46px;
+}
+.apartment-price-input{
+	box-sizing: border-box;
+	width: 263px;
+	height: 40px;
+	background-color: #FFFFFF;
+	border: solid 1px #e5e5e5;
+	padding-left: 20px;
+	font-size: 15px;
+	color: #9b9b9b;
+	margin-right: 15px;
+}
+.apartment-price-box{
+	padding-bottom: 17px;
+}
+.cierralo-price-container{
+	padding-top: 56px;
+}
+.orange-block-text{
+	font-size: 17px;
+}
+.orange-block-text-box{
+	width: 287px;
+	text-align: center;
+}
+.orange-block-box{
+	width: 424px;
+	height: 117px;
+	background-color: #e66700;
+	margin-top: -45px;
+}
+.grey-back-divider{
+	width: 585px;
+	height: 1px;
+	background-color: #e5e5e5;
+}
+.orange-block-container{
+	padding-top: 117px;
+}
+.orange-link{
+	text-decoration: none;
+	color: #FFFFFF;
+	border-bottom: solid 1px #ffffff;
+}
+.grey-link{
+	text-decoration: none;
+	color: #9b9b9b;
+	border-bottom: solid 1px #9b9b9b;
+}
+.full-info-text{
+	font-size: 15px;
+	text-align: center;
+}
+.full-info-text-box{
+	width: 367px;
+}
+.full-info-container{
+	padding-top: 77px;
+}

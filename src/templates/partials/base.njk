@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/application.css">
-    <link rel="stylesheet" href="./css/mobile.css">
     <!--Profile css file-->
     <link rel="stylesheet" href="./css/profile.css">
     <!--All building list css file-->
@@ -47,6 +46,7 @@
     <link rel="stylesheet" href="./css/postApartmentFour.css">
     <!--Schedule css file-->
     <link rel="stylesheet" href="./css/postApartmentFive.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <!--Slick css file-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
@@ -89,7 +89,23 @@
         {% elif section == 'buildingList' %}
             <script src="./js/buildingList.js"></script>
         {% elif section == 'buildingDetail' %}
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.js"></script>
             <script src="./js/buildingDetail.js"></script>
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+            <script type="text/javascript">
+              $(".hour-slider").slick({
+                infinite: true,
+                centerMode: true,
+                centerPadding: '10px',
+                slidesToShow: 3,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                nextArrow: '<img class="hours-next cursor-pointer" src="./img/icons/flecha-carrusel.png"></img>',
+                prevArrow: '<img class="hours-prev cursor-pointer" src="./img/icons/flecha-carrusel-copy.png"></img>',
+              });
+            </script>
         {% elif section == 'register' %}
             <script src="./js/register.js"></script>
         {% elif section == 'dashboard' %}

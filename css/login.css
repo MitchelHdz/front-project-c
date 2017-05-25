@@ -8,6 +8,7 @@
 	font-size: 25px;
 	line-height: 56px;
 	margin: 0px;
+	padding-bottom: 15px;
 }
 .login-subtitle{
 	font-size: 17px;
@@ -37,6 +38,9 @@
 }
 .button-text{
 	font-size: 16px;
+}
+.button-text.google{
+	padding-right: 20px;
 }
 .facebook-button{
 	background-color: #395997;
@@ -152,4 +156,7 @@
 .seller-login-box{
 	padding-top: 27px;
 	padding-left: 5px;
+}
+.login-body{
+	padding-top: 35px;
 }

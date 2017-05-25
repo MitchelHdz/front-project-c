@@ -22,7 +22,7 @@ var galleryImage = document.getElementById("galleryImage");
 var leftArrow = document.getElementById("arrow-left");
 var rightArrow = document.getElementById("arrow-right");
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var closeGallery = document.getElementById('closeGallery')
 var body = document.getElementById('body');
 // When the user clicks on the button, open the modal 
 function openGallery() {
@@ -72,7 +72,7 @@ for (var i = 0; i < galleryBtns.length; i++) {
     galleryBtns[i].addEventListener('click', openGallery, false);
 }
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+closeGallery.onclick = function() {
 	galleryModal.classList.remove('modal-open');
 	body.classList.remove('modal-open');
 }
@@ -160,16 +160,17 @@ var scheduleModal = document.getElementById('scheduleModal');
 var btn = document.getElementById("openModal");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var closeSchedule = document.getElementById("closeSchedule");
 var body = document.getElementById('body');
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
   scheduleModal.classList.add('modal-open');
   body.classList.add('modal-open');
+  $('.hour-slider').resize();
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+closeSchedule.onclick = function() {
   scheduleModal.classList.remove('modal-open');
   body.classList.remove('modal-open');
 }

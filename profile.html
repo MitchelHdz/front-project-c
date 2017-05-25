@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/application.css">
-    <link rel="stylesheet" href="./css/mobile.css">
     <!--Profile css file-->
     <link rel="stylesheet" href="./css/profile.css">
     <!--All building list css file-->
@@ -48,6 +47,7 @@
     <link rel="stylesheet" href="./css/postApartmentFour.css">
     <!--Schedule css file-->
     <link rel="stylesheet" href="./css/postApartmentFive.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <!--Slick css file-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
@@ -112,17 +112,19 @@
 			<div class="cierralo-contact-modal-divider cierralo-flex-row">
 
 			</div>
-			<div class="modal-body">
+			<div class="modal-body-contact">
 				<img src="./img/dude.png" alt="" class="user-seller-photo-modal">
 				<p class="modal-owner-text cierralo-grey-text cierralo-font-helveltica-medium letter-spacing-dot-six">Propietario</p>
 				<p class="modal-name-text cierralo-font-helveltica-bold cierralo-purplish-grey letter-spacing-dot-six">José Martínez</p>
+				<a href="#"><img src="./img/icons/page-1-copy-5@3x.png" alt="" class="modal-icon-phone"></a>
+				<a href="#"><img src="./img/icons/icono-correo.png" alt="" class="modal-icon-mail"></a>
 			</div>
 			<div class="modal-footer">
 				<div class="modal-arrow-down">
-
 				</div>
-				<a href="#"><img src="./img/icons/group-6@3x.png" alt="" class="modal-icon-phone"></a>
-				<a href="#"><img src="./img/icons/group-7@3x.png" alt="" class="modal-icon-mail"></a>
+				<div class="email-modal-box cursor-pointer cierralo-flex-colum">
+					<p class="email-modal-text cierralo-font-helveltica-neue-light letter-spacing-dot-six">Correo electrónico</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -147,7 +149,7 @@
 					<i class="fa fa-star-half-o rate-star" aria-hidden="true"></i>
 					<i class="fa fa-star-o rate-star" aria-hidden="true"></i>
 				</div>
-				<button class="cierralo-font-helveltica-neue-light cierralo-contact-btn cierralo-btn-secondary letter-spacing-dot-six cursor-pointer" id="modalButton">Contactar</button>
+				<button class="cierralo-font-helveltica-neue-light cierralo-contact-btn cierralo-btn-secondary letter-spacing-dot-six cursor-pointer hover-btn-orange" id="modalButton">Contactar</button>
 			</div>
 		</div>
 		<div class="buildings-title-container">
@@ -164,7 +166,6 @@
 
 				</div>
 				<p class="building-cost cierralo-orange-text cierralo-font-helveltica-neue-light letter-spacing-dot-four">5.2 MDP</p>
-				<a href="./buildingDetail.html"><button class="cierralo-font-helveltica-neue-light cierralo-building-more-btn cierralo-btn-secondary letter-spacing-dot-six cursor-pointer">Ver más</button></a>
 			</div>
 		</div>
 		<div class="building-container">
@@ -178,7 +179,6 @@
 
 				</div>
 				<p class="building-cost cierralo-orange-text cierralo-font-helveltica-neue-light letter-spacing-dot-four">5.2 MDP</p>
-				<a href="./buildingDetail.html"><button class="cierralo-font-helveltica-neue-light cierralo-building-more-btn cierralo-btn-secondary letter-spacing-dot-six cursor pointer">Ver más</button></a>
 			</div>
 		</div>
 		<div class="building-container">
@@ -192,10 +192,9 @@
 
 				</div>
 				<p class="building-cost cierralo-orange-text cierralo-font-helveltica-neue-light letter-spacing-dot-four">5.2 MDP</p>
-				<a href="./buildingDetail.html"><button class="cierralo-font-helveltica-neue-light cierralo-building-more-btn cierralo-btn-secondary letter-spacing-dot-six cursor-pointer">Ver más</button></a>
 			</div>
 		</div>
-		<a href="./buildingList.html"><button class="cierralo-font-helveltica-neue-light cierralo-more-btn cierralo-btn-secondary cursor-pointer">Ver más</button></a>
+		<a href="./buildingList.html"><button class="cierralo-font-helveltica-neue-light cierralo-more-btn cierralo-btn-secondary cursor-pointer hover-btn-orange">Ver más</button></a>
 		<div class="cierralo-pre-footer-divider cierralo-flex-row">
 
 		</div>
@@ -216,7 +215,7 @@
                     <a href="./">
                         <img src="./img/logo/cierralo-logo-02.png" class="cierralo-footer-logo">
                     </a>
-                    <p>© 2017</p>
+                    <p class="size-2017">© 2017</p>
                 </div>
                 <div class="cierralo-adjust-footer">
                     <ul class="cierralo-footer-list">
@@ -227,18 +226,17 @@
                     <ul class="cierralo-footer-list">
                         <li>info@cierralo.com</li>
                         <li><a href="tel:45674323" class="cierralo-phone">(55) 4567 4323</a></li>
-                        <li><img src="./img/icons/fb.svg"><img src="./img/icons/instagram.svg" class="cierralo-add-padding-left"></li>
+                        <li><img src="./img/icons/fb.svg"><img src="./img/icons/instagram.svg" class="cierralo-add-padding-left footer-icon-top"></li>
                     </ul>
                 </div>
                 <div class="cierralo-footer-right">
-                    <p class="cierralo-footer-font-special cierralo-font-helveltica-bold">Conviértete en vendedor</p>
-                    <a href="./register.html"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer">Regístrate</button></a>
+                    <a href="./register.html"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer hover-btn-orange">Regístrate</button></a>
                 </div>
             </div>
             <div class="cierralo-footer-divider cierralo-flex-row">
 
             </div>
-            <div class="cierralo-footer-last-text cierralo-flex-row">
+            <div class="cierralo-footer-last-text cierralo-flex-row terms-text-size">
                 <div>
                     Términos y condiciones
                 </div>

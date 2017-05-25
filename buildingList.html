@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/application.css">
-    <link rel="stylesheet" href="./css/mobile.css">
     <!--Profile css file-->
     <link rel="stylesheet" href="./css/profile.css">
     <!--All building list css file-->
@@ -48,6 +47,7 @@
     <link rel="stylesheet" href="./css/postApartmentFour.css">
     <!--Schedule css file-->
     <link rel="stylesheet" href="./css/postApartmentFive.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <!--Slick css file-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
@@ -59,12 +59,12 @@
   <body id="body">
     <div id="page">
         
-            <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
-    <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-    </span>
-</button>
-<nav id="navigation" class="cierralo-navbar">
+            <nav id="navigation" class="cierralo-navbar">
+    <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
     <a class="navbar-brand" href="./">
         <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
     </a>
@@ -77,12 +77,12 @@
             <li class="cierralo-font-helveltica-neue cierralo-purplish-grey"><a href="./login.html">Inicia sesión</a></li>
             <li class="cierralo-font-helveltica-medium" class="no-padding-top">
                 <a href="/register.html" class="no-padding-top">
-                    <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarRegister">Regístrate</button>
+                    <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer hover-btn-orange-lighter" id="navbarRegister">Regístrate</button>
                 </a>
             </li>
             <li class="cierralo-font-helveltica-medium" class="no-padding-top">
                 <a href="/login.html" class="no-padding-top">
-                    <button class="cierralo-font-helveltica-neue cierralo-contact-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarContact">Contacto</button>
+                    <button class="cierralo-font-helveltica-neue cierralo-contact-navbar-btn cierralo-btn-secondary cursor-pointer hover-btn-orange" id="navbarContact">Contacto</button>
                 </a>
             </li>
             <li class="cierralo-font-helveltica-neue no-margin-right phone-tooltip-box">
@@ -95,7 +95,7 @@
                 <a href="./login.html">
                     <img src="./img/icons/page-1-copy-4@3x.png" class="navbar-whatsapp-icon">
                 </a>
-                <span class="tooltip-text neopraxis-font-myriadpro-light">55. 456. 544. 34</span>
+                <span class="tooltip-text neopraxis-font-myriadpro-light">55. 478. 521. 35</span>
             </li>
         </ul>
         <div hidden="" class="cierralo-show-in-movil">
@@ -122,7 +122,6 @@
                     <div class="cierralo-font-helveltica-neue-light cierralo-filter-left">
                         <div>
                             <div>Precio</div>
-                            <div class="cierralo-filter-divider"></div>
                             <div class="cierralo-slider">
                                 <section class="range-slider">
                                     <div class="slider-value-container inline-block" id="slide-box-1">
@@ -135,25 +134,13 @@
                                     <input value="5.0" min="3.5" max="5.0" step="0.1" type="range" class="filter-slider">
                                     <div class="range-text-container">
                                         <p class="range-text inline-block cierralo-font-helvetica-thin cierralo-pinkish-grey-two float-left">Min.</p>
-                                        <p class="range-text inline-block cierralo-font-helvetica-thin cierralo-pinkish-grey-two float-right">Max.</p>
+                                        <p class="range-text inline-block cierralo-font-helvetica-thin cierralo-pinkish-grey-two float-right">Máx.</p>
                                     </div>
                                 </section>
                             </div>
                         </div>
                         <div class="municipality-container">
                             <div>Delegación</div>
-                            <div class="cierralo-filter-divider"></div>
-                        </div>
-                        <div class="share-container cierralo-flex-row-flex-start">
-                            <p class="share-text inline-block cierralo-font-helveltica-neue-light cierralo-pinkish-grey letter-spacing-dot-six">Comparte: </p>
-                            <div class="share-icons-box inline-block">
-                                <a href="" class="building-list-share-link cursor-pointer">
-                                    <img src="./img/icons/twitter-logo-button@3x.png" alt="" class="inline-block building-list-share-icon">
-                                </a>
-                                <a href="" class="building-list-share-link cursor-pointer">
-                                    <img src="./img/icons/facebook-logo-button@3x.png" alt="" class="inline-block building-list-share-icon">
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -171,7 +158,7 @@
                     <a href="./">
                         <img src="./img/logo/cierralo-logo-02.png" class="cierralo-footer-logo">
                     </a>
-                    <p>© 2017</p>
+                    <p class="size-2017">© 2017</p>
                 </div>
                 <div class="cierralo-adjust-footer">
                     <ul class="cierralo-footer-list">
@@ -182,18 +169,17 @@
                     <ul class="cierralo-footer-list">
                         <li>info@cierralo.com</li>
                         <li><a href="tel:45674323" class="cierralo-phone">(55) 4567 4323</a></li>
-                        <li><img src="./img/icons/fb.svg"><img src="./img/icons/instagram.svg" class="cierralo-add-padding-left"></li>
+                        <li><img src="./img/icons/fb.svg"><img src="./img/icons/instagram.svg" class="cierralo-add-padding-left footer-icon-top"></li>
                     </ul>
                 </div>
                 <div class="cierralo-footer-right">
-                    <p class="cierralo-footer-font-special cierralo-font-helveltica-bold">Conviértete en vendedor</p>
-                    <a href="./register.html"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer">Regístrate</button></a>
+                    <a href="./register.html"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer hover-btn-orange">Regístrate</button></a>
                 </div>
             </div>
             <div class="cierralo-footer-divider cierralo-flex-row">
 
             </div>
-            <div class="cierralo-footer-last-text cierralo-flex-row">
+            <div class="cierralo-footer-last-text cierralo-flex-row terms-text-size">
                 <div>
                     Términos y condiciones
                 </div>

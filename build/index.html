@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/application.css">
-    <link rel="stylesheet" href="./css/mobile.css">
     <!--Profile css file-->
     <link rel="stylesheet" href="./css/profile.css">
     <!--All building list css file-->
@@ -40,6 +39,15 @@
     <link rel="stylesheet" href="./css/schedule.css">
     <!--Schedule css file-->
     <link rel="stylesheet" href="./css/postAparmentFeatures.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentTwo.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentThree.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentFour.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentFive.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <!--Slick css file-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
@@ -51,12 +59,12 @@
   <body id="body">
     <div id="page">
         
-            <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
-    <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-    </span>
-</button>
-<nav id="navigation" class="cierralo-navbar">
+            <nav id="navigation" class="cierralo-navbar">
+    <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
     <a class="navbar-brand" href="./">
         <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
     </a>
@@ -69,12 +77,12 @@
             <li class="cierralo-font-helveltica-neue cierralo-purplish-grey"><a href="./login.html">Inicia sesión</a></li>
             <li class="cierralo-font-helveltica-medium" class="no-padding-top">
                 <a href="/register.html" class="no-padding-top">
-                    <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarRegister">Regístrate</button>
+                    <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer hover-btn-orange-lighter" id="navbarRegister">Regístrate</button>
                 </a>
             </li>
             <li class="cierralo-font-helveltica-medium" class="no-padding-top">
                 <a href="/login.html" class="no-padding-top">
-                    <button class="cierralo-font-helveltica-neue cierralo-contact-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarContact">Contacto</button>
+                    <button class="cierralo-font-helveltica-neue cierralo-contact-navbar-btn cierralo-btn-secondary cursor-pointer hover-btn-orange" id="navbarContact">Contacto</button>
                 </a>
             </li>
             <li class="cierralo-font-helveltica-neue no-margin-right phone-tooltip-box">
@@ -87,7 +95,7 @@
                 <a href="./login.html">
                     <img src="./img/icons/page-1-copy-4@3x.png" class="navbar-whatsapp-icon">
                 </a>
-                <span class="tooltip-text neopraxis-font-myriadpro-light">55. 456. 544. 34</span>
+                <span class="tooltip-text neopraxis-font-myriadpro-light">55. 478. 521. 35</span>
             </li>
         </ul>
         <div hidden="" class="cierralo-show-in-movil">
@@ -117,11 +125,11 @@
                             <div class="cierralo-main-divider"></div>
                         </div>
                         <div class="cierralo-flex-row cierralo-aling-end cierralo-more-top">
-                            <div class="cierralo-left-container cierralo-text-center cierralo-adjust">
+                            <div class="cierralo-left-container cierralo-text-center cierralo-adjust cierralo-dark-greyish">
                                 <img src="./img/icons/sen-ora-manos-v-2-01@3x.png" class="cierralo-broken">
                                 <p><span class="cierralo-strong-font">Adiós</span> a los <span class="cierralo-strong-font">corredores</span> de inmuebles</p>
                             </div>
-                            <div class="cierralo-right-container cierralo-text-center cierralo-adjust">
+                            <div class="cierralo-right-container cierralo-text-center cierralo-adjust cierralo-dark-greyish">
                                 <img src="./img/icons/hands-03@3x.png" class="cierralo-hands">
                                 <p class="cierralo-adjust-hands">Te llevamos de la mano para <span class="cierralo-strong-font">lograr la compra - venta</span></p>
                             </div>
@@ -147,7 +155,7 @@
                             </div>
                         </div>
                         <a href="./login.html">
-                            <button class="cierralo-font-helveltica-medium cierralo-post-header-btn cierralo-btn-secondary cursor-pointer" id="postButton">Publica tu departamento</button>
+                            <button class="cierralo-font-helveltica-medium cierralo-post-header-btn cierralo-btn-secondary cursor-pointer hover-btn-orange-lighter" id="postButton">Publica tu departamento</button>
                         </a>
                     </div>
                 </div>
@@ -183,7 +191,7 @@
                         </div>
                         <div class="cierralo-comparative-divider cierralo-hide-in-movil"></div>
                         <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column">
-                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium cierralo-dark-greyish">
                                 <p>Conoce</p>
                                 <img src="./img/icons/cierralo-iconos-a-02@3x.png" class="cierralo-table-one">
                             </div>
@@ -206,7 +214,7 @@
                         </div>
                         <div class="cierralo-comparative-divider"></div>
                         <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column cierralo-movil-change-column">
-                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium cierralo-dark-greyish">
                                 <p>Determina</p>
                                 <img src="./img/icons/cierralo-iconos-a-03@3x.png" class="cierralo-table-two">
                             </div>
@@ -229,7 +237,7 @@
                         </div>
                         <div class="cierralo-comparative-divider"></div>
                         <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column">
-                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium cierralo-dark-greyish">
                                 <p>Publica</p>
                                 <img src="./img/icons/cierralo-iconos-a-04@3x.png" class="cierralo-table-three">
                             </div>
@@ -252,7 +260,7 @@
                         </div>
                         <div class="cierralo-comparative-divider"></div>
                         <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column">
-                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium cierralo-dark-greyish">
                                 <p>Posiciona</p>
                                 <img src="./img/icons/cierralo-iconos-a-05@3x.png" class="cierralo-table-four">
                             </div>
@@ -275,7 +283,7 @@
                         </div>
                         <div class="cierralo-comparative-divider"></div>
                         <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column">
-                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium cierralo-dark-greyish">
                                 <p>Oferta</p>
                                 <img src="./img/icons/cierralo-iconos-a-06@3x.png" class="cierralo-table-five">
                             </div>
@@ -298,7 +306,7 @@
                         </div>
                         <div class="cierralo-comparative-divider"></div>
                         <div class="cierralo-flex-row cierralo-padding-top-bottom cierralo-movil-change-column">
-                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium">
+                            <div class="cierralo-main-table-row-icon cierralo-font-helveltica-medium cierralo-dark-greyish">
                                 <p>Ciérralo</p>
                                 <img src="./img/icons/cierralo-iconos-a-07@3x.png" class="cierralo-table-six">
                             </div>
@@ -331,7 +339,7 @@
                         <p class="onsale-title cierralo-font-helveltica-neue cierralo-broken-color">Envíanos un anuncio de algún departamento que veas en venta</p>
                         <p class="onsale-subtitle cierralo-font-helveltica-neue">¡Te depositaremos $50 MXN!</p>
                         <a href="./login.html">
-                            <button class="cierralo-font-helveltica-medium cierralo-onsale-btn cierralo-btn-secondary cursor-pointer" id="postButton">Más información</button>
+                            <button class="cierralo-font-helveltica-medium cierralo-onsale-btn cierralo-btn-secondary cursor-pointer hover-btn-orange-lighter" id="postButton">Más información</button>
                         </a>
                     </div>
                     <div class="onsale-divider">
@@ -365,8 +373,8 @@
                     <div class="cierralo-flex-colum">
                         <p class="cierralo-last-title cierralo-font-helveltica-medium cierralo-black-text">¡Regístrate!</p>
                         <div class="cierralo-buttons-landing-container">
-                            <a class="cierralo-btn-secondary cierralo-default-btn cierralo-font-helveltica-medium cursor-pointer" href="./login.html">Comprar</a>
-                            <a class="cierralo-btn-primary cierralo-default-btn cierralo-font-helveltica-medium cursor-pointer" href="./login.html">Vender</a>
+                            <a class="cierralo-btn-secondary cierralo-default-btn cierralo-font-helveltica-medium cursor-pointer hover-btn-orange" href="./login.html">Comprar</a>
+                            <a class="cierralo-btn-primary cierralo-default-btn cierralo-font-helveltica-medium cursor-pointer hover-btn-orange-lighter" href="./login.html">Vender</a>
                         </div>
                     </div>
                 </div>
@@ -383,7 +391,7 @@
                     <a href="./">
                         <img src="./img/logo/cierralo-logo-02.png" class="cierralo-footer-logo">
                     </a>
-                    <p>© 2017</p>
+                    <p class="size-2017">© 2017</p>
                 </div>
                 <div class="cierralo-adjust-footer">
                     <ul class="cierralo-footer-list">
@@ -394,18 +402,17 @@
                     <ul class="cierralo-footer-list">
                         <li>info@cierralo.com</li>
                         <li><a href="tel:45674323" class="cierralo-phone">(55) 4567 4323</a></li>
-                        <li><img src="./img/icons/fb.svg"><img src="./img/icons/instagram.svg" class="cierralo-add-padding-left"></li>
+                        <li><img src="./img/icons/fb.svg"><img src="./img/icons/instagram.svg" class="cierralo-add-padding-left footer-icon-top"></li>
                     </ul>
                 </div>
                 <div class="cierralo-footer-right">
-                    <p class="cierralo-footer-font-special cierralo-font-helveltica-bold">Conviértete en vendedor</p>
-                    <a href="./register.html"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer">Regístrate</button></a>
+                    <a href="./register.html"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer hover-btn-orange">Regístrate</button></a>
                 </div>
             </div>
             <div class="cierralo-footer-divider cierralo-flex-row">
 
             </div>
-            <div class="cierralo-footer-last-text cierralo-flex-row">
+            <div class="cierralo-footer-last-text cierralo-flex-row terms-text-size">
                 <div>
                     Términos y condiciones
                 </div>

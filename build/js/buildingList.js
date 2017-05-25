@@ -97,13 +97,12 @@ function getVals(){
   var slider2 = document.getElementById('slider-2');
       slider1.innerHTML = slide1 + " MDP";
       slider2.innerHTML = slide2 + " MDP";
+  console.log($(this).position());
   $('.cierralo-all-price').each(function(index, el) {
-    console.log('slider');
     $(this).closest('cierralo-building-feature').show();
     var priceValue = $(this).text();
     priceValue = priceValue.replace("MDP", " ");
     priceValue = priceValue.replace(",", ".");
-    console.log(priceValue + ' ' + slide1)
     if(priceValue < slide1 || priceValue > slide2){
       $(this).closest('.cierralo-building-feature').hide();
     }

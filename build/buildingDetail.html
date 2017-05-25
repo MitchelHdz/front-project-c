@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/application.css">
-    <link rel="stylesheet" href="./css/mobile.css">
     <!--Profile css file-->
     <link rel="stylesheet" href="./css/profile.css">
     <!--All building list css file-->
@@ -40,6 +39,15 @@
     <link rel="stylesheet" href="./css/schedule.css">
     <!--Schedule css file-->
     <link rel="stylesheet" href="./css/postAparmentFeatures.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentTwo.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentThree.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentFour.css">
+    <!--Schedule css file-->
+    <link rel="stylesheet" href="./css/postApartmentFive.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <!--Slick css file-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
@@ -51,12 +59,12 @@
   <body id="body">
     <div id="page">
         
-            <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
-    <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-    </span>
-</button>
-<nav id="navigation" class="cierralo-navbar">
+            <nav id="navigation" class="cierralo-navbar">
+    <button class="hamburger hamburger--collapse" type="button" id="cierralo-hamburger-menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
     <a class="navbar-brand" href="./">
         <img src="./img/logo/cierralo-fit-logo.png" class="fitLogo" id="fit-logo">
     </a>
@@ -69,12 +77,12 @@
             <li class="cierralo-font-helveltica-neue cierralo-purplish-grey"><a href="./login.html">Inicia sesión</a></li>
             <li class="cierralo-font-helveltica-medium" class="no-padding-top">
                 <a href="/register.html" class="no-padding-top">
-                    <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarRegister">Regístrate</button>
+                    <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer hover-btn-orange-lighter" id="navbarRegister">Regístrate</button>
                 </a>
             </li>
             <li class="cierralo-font-helveltica-medium" class="no-padding-top">
                 <a href="/login.html" class="no-padding-top">
-                    <button class="cierralo-font-helveltica-neue cierralo-contact-navbar-btn cierralo-btn-secondary cursor-pointer" id="navbarContact">Contacto</button>
+                    <button class="cierralo-font-helveltica-neue cierralo-contact-navbar-btn cierralo-btn-secondary cursor-pointer hover-btn-orange" id="navbarContact">Contacto</button>
                 </a>
             </li>
             <li class="cierralo-font-helveltica-neue no-margin-right phone-tooltip-box">
@@ -87,7 +95,7 @@
                 <a href="./login.html">
                     <img src="./img/icons/page-1-copy-4@3x.png" class="navbar-whatsapp-icon">
                 </a>
-                <span class="tooltip-text neopraxis-font-myriadpro-light">55. 456. 544. 34</span>
+                <span class="tooltip-text neopraxis-font-myriadpro-light">55. 478. 521. 35</span>
             </li>
         </ul>
         <div hidden="" class="cierralo-show-in-movil">
@@ -119,7 +127,7 @@
     <div id="galleryModal" class="modal">
         <!-- Modal content -->
         <div class="gallery-modal-content cierralo-flex-row">
-            <div class="modal-close-btn-container cursor-pointer">
+            <div class="modal-close-btn-container cursor-pointer" id="closeGallery">
                 <span class="close cierralo-font-helveltica-neue-light cursor-pointer"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
             </div>
             <img src="" alt="" class="gallery-modal-image" id="galleryImage">
@@ -131,10 +139,77 @@
             </div>
         </div>
     </div>
+    <div id="scheduleModal" class="scheduling-modal">
+      <!-- Modal content -->
+      <div class="schedule-modal-content cierralo-flex-colum">
+        <div class="modal-close-btn-container" id="closeSchedule">
+          <span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
+        </div>
+        <div class="scheduling-alert-modal-body cierralo-flex-colum">
+          <p class="schedule-modal-title cierralo-grey-text cierralo-font-helveltica-medium letter-spacing-dot-one">Agendar visita</p>
+          <p class="schedule-modal-subtitle cierralo-grey-text cierralo-font-helveltica-medium letter-spacing-dot-one">Selecciona la fecha de visita</p>
+          <div class="scheduling-modal-divider"></div>
+          <div class="select-dater-box">
+            <div id="datepicker">
+          
+            </div>
+          </div>
+          <div class="schedule-modal-divider"></div>
+            <div class="cierralo-flex-row">
+                <div class="hour-silder-icon-box">
+                    <img src="./img/icons/Reloj.png" class="hour-slider-icon">
+                </div>
+                <div class="hour-slider">
+                   <div class="hourslider-box">
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">08:00</div>
+                   </div> 
+                   <div class="hourslider-box">
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">09:00</div>
+                   </div> 
+                   <div class="hourslider-box">
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">10:00</div>
+                   </div> 
+                   <div class="hourslider-box">
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">11:00</div>
+                   </div> 
+                   <div class="hourslider-box">
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">12:00</div>
+                   </div> 
+                   <div class="hourslider-box">
+                    <div class="cierralo-font-helveltica-medium cierralo-purplish-grey-two hourslider-text">13:00</div>
+                   </div> 
+                </div>
+            </div>
+          <div class="schedule-modal-divider"></div>
+          <div class="cierralo-flex-row modal-credential-container">
+              <div class="credential-text-box">
+                  <p class="credential-title cierralo-font-helveltica-medium cierralo-purplish-grey-two letter-spacing-dot-three">Identificación Oficial</p>
+                  <p class="credential-text cierralo-font-helveltica-neue cierralo-warm-grey">Para agendar una visita necesitamos que mandes tu identificación oficial escaneada. Puede ser IFE, pasaporte o licencia.</p>
+                  <div class="credential-button">
+                      <p class="credential-button-text cierralo-white-text letter-spacing-dot-six cierralo-font-helveltica-neue">Agendar </p>
+                  </div>
+              </div>
+              <div class="credential-dropzone">
+                  <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+                  <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+                  <form action="/file-upload" class="dropzone credentials">
+                    <div class="fallback">
+                      <input name="file" type="file" multiple />
+                    </div>
+                    <div class="dz-message dropzone-credentials-container" data-dz-message>
+                      <img src="./img/icons/icono-subir-archivo.png" class="credentials-dropzone-icon">
+                      <p class="credential-dropzone-text cierralo-warm-grey cierralo-font-helveltica-neue">Arrastra tu archivo</p>
+                    </div>
+                  </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="building-main onload">
         <div class="galery-container cierralo-flex-row-flex-start">
-            <div class="more-button-container cursor-pointer">
-                <img src="./img/icons/more.png" alt="" class="more-icon-gallery">
+            <div class="more-button-container cursor-pointer" id="openGalleryMore">
+                <img src="./img/icons/more.png" alt="" class="more-icon-gallery openGalleryModal" imageSrc="./img/photo532577139161512309.jpg">
             </div>
             <div id="carouselBox" class="cierralo-flex-row-flex-start">
                 <img src="./img/photo532577139161512309.jpg" alt="" class="image-gallery openGalleryModal cursor-pointer" imageSrc="./img/photo532577139161512309.jpg">
@@ -176,9 +251,9 @@ Ciudad de México.</p>
                 <div class="building-features-container cierralo-flex-row-flex-start">
                     <div class="building-single-feature-container">
                         <div class="building-feature-icon-box">
-                            <img src="./img/icons/icon-house.png" alt="" class="feature-icon-house">
+                            <img src="./img/icons/group-9@3x.png" alt="" class="feature-icon-house">
                         </div>
-                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light">Casa</p>
+                        <p class="building-feature-text letter-spacing-dot-six cierralo-pinkish-grey cierralo-font-helveltica-neue-light">Departamento</p>
                     </div>
                     <div class="building-single-feature-container">
                         <div class="building-feature-icon-box">
@@ -206,8 +281,8 @@ Ciudad de México.</p>
                     </div>
                 </div>
                 <div class="building-buttons-container">
-                    <a href="./login.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-make-offer-building-btn cierralo-btn-secondary cursor-pointer">Realizar oferta</button></a>
-                    <a href="./login.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-date-building-btn cierralo-btn-secondary cursor-pointer">Agendar cita</button></a>
+                    <a href="./login.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-make-offer-building-btn cierralo-btn-secondary cursor-pointer hover-btn-orange">Realizar oferta</button></a>
+                    <a href="#" id="openModal"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-date-building-btn cierralo-btn-secondary cursor-pointer hover-btn-orange">Agendar cita</button></a>
                 </div>
             </div>
             <div class="building-share-container">
@@ -261,7 +336,7 @@ Ciudad de México.</p>
                     <p class="building-service-text inline-block cierralo-pinkish-grey cierralo-font-helveltica-neue-light letter-spacing-dot-six">Acabados de lujo</p>
                 </div>
                 <div class="service-box cierralo-flex-row">
-                    <img src="./img/icons/flower-icon.png" alt="" class="building-service-icon inline-block">
+                    <img src="./img/icons/flower-icon.png" alt="" class="building-service-icon flower inline-block">
                     <p class="building-service-text inline-block cierralo-pinkish-grey cierralo-font-helveltica-neue-light letter-spacing-dot-six">Lobby</p>
                 </div>
             </div>
@@ -292,7 +367,8 @@ Ciudad de México.</p>
                     zoom: 15,
                     center: new google.maps.LatLng(19.4192741,-99.1646228),
                     mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    scrollwheel: false
+                    scrollwheel: false,
+                    styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
                     };
                     map = new google.maps.Map(document.getElementById('googleMap'),
                     mapOptions);
@@ -321,7 +397,7 @@ Ciudad de México.</p>
                     <a href="./">
                         <img src="./img/logo/cierralo-logo-02.png" class="cierralo-footer-logo">
                     </a>
-                    <p>© 2017</p>
+                    <p class="size-2017">© 2017</p>
                 </div>
                 <div class="cierralo-adjust-footer">
                     <ul class="cierralo-footer-list">
@@ -332,18 +408,17 @@ Ciudad de México.</p>
                     <ul class="cierralo-footer-list">
                         <li>info@cierralo.com</li>
                         <li><a href="tel:45674323" class="cierralo-phone">(55) 4567 4323</a></li>
-                        <li><img src="./img/icons/fb.svg"><img src="./img/icons/instagram.svg" class="cierralo-add-padding-left"></li>
+                        <li><img src="./img/icons/fb.svg"><img src="./img/icons/instagram.svg" class="cierralo-add-padding-left footer-icon-top"></li>
                     </ul>
                 </div>
                 <div class="cierralo-footer-right">
-                    <p class="cierralo-footer-font-special cierralo-font-helveltica-bold">Conviértete en vendedor</p>
-                    <a href="./register.html"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer">Regístrate</button></a>
+                    <a href="./register.html"><button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer hover-btn-orange">Regístrate</button></a>
                 </div>
             </div>
             <div class="cierralo-footer-divider cierralo-flex-row">
 
             </div>
-            <div class="cierralo-footer-last-text cierralo-flex-row">
+            <div class="cierralo-footer-last-text cierralo-flex-row terms-text-size">
                 <div>
                     Términos y condiciones
                 </div>
@@ -368,7 +443,23 @@ Ciudad de México.</p>
     
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
         
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.js"></script>
             <script src="./js/buildingDetail.js"></script>
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+            <script type="text/javascript">
+              $(".hour-slider").slick({
+                infinite: true,
+                centerMode: true,
+                centerPadding: '10px',
+                slidesToShow: 3,
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                nextArrow: '<img class="hours-next cursor-pointer" src="./img/icons/flecha-carrusel.png"></img>',
+                prevArrow: '<img class="hours-prev cursor-pointer" src="./img/icons/flecha-carrusel-copy.png"></img>',
+              });
+            </script>
         
         <script src="./js/navbar.js"></script>
     

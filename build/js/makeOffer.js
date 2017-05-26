@@ -53,15 +53,11 @@ function removeHidden() {
 function greyHidden() {
 	removeHidden();
 	document.getElementById('hook-with').classList.add('hidden');
-	document.getElementById('hook-container-without').classList.add('hidden');
 	document.getElementById('hook-value-without').classList.add('hidden');
 	document.getElementById('date-with').classList.add('hidden');
-	document.getElementById('date-without').classList.add('hidden');
 	document.getElementById('delivery-with').classList.add('hidden');
 	document.getElementById('delivery-grey-without').classList.add('hidden');
 	document.getElementById('delivery-container-without').classList.add('hidden');
-	document.getElementById('hook-offer-container').classList.add('fix-paddings');
-	document.getElementById('sign-date-container').classList.add('fix-paddings');
 	document.getElementById('terms-container').classList.add('fix-paddings');
 }
 document.getElementById('withGrey').addEventListener('click', function () {

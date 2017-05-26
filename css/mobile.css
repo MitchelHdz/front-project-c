@@ -712,6 +712,10 @@
   .cierralo-navbar-style{
     display: block !important;
   }
+  .navbar-phone-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media only screen and (min-width: 420px) and (max-width: 767px){
   .register-input{

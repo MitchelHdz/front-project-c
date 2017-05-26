@@ -111,6 +111,33 @@ $.ajax({
         	$('.building-feature-text.toilets').text(data.Propiedades[build].toilets + ' baños');
         	$('.building-feature-text.places').text(data.Propiedades[build].PisoEnElQueSeEncuentra + ' espacios');
         	$('.building-about-text').text(data.Propiedades[build].descripción);
+            if(data.Propiedades[build].gimnasio == 'no'){
+                $('.service-box.gym').hide();
+            }
+            if(data.Propiedades[build].circuitoCerrado == 'no'){
+                $('.service-box.closed-circuit').hide();
+            }
+            if(data.Propiedades[build].lobby == 'no'){
+                $('.service-box.lobby').hide();
+            }
+            if(data.Propiedades[build].alberca == 'no'){
+                $('.service-box.pool').hide();
+            }
+            if(data.Propiedades[build].acabadosLujo == 'no'){
+                $('.service-box.premiere').hide();
+            }
+            if(data.Propiedades[build].carrilNado == 'no'){
+                $('.service-box.swim-way').hide();
+            }
+            if(data.Propiedades[build].canchaTenis == 'no'){
+                $('.service-box.tennis').hide();
+            }
+            if(data.Propiedades[build].canchaPadel == 'no'){
+                $('.service-box.paddel').hide();
+            }
+            if(data.Propiedades[build]['internet/wifi'] == 'no'){
+                $('.service-box.wifi').hide();
+            }
         }
       });
 jQuery(document).ready(function() { 

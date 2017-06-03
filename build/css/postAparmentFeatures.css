@@ -174,6 +174,7 @@
   width: 223px;
   margin-right: 15px;
   margin-top: 15px;
+  position: relative;
 }
 .apartment-input-container.inner-number{
   width: 218px;
@@ -220,6 +221,15 @@
   width: 140px;
   margin-left: 30px;
 }
+.input-service-label{
+  font-size: 12px;
+  text-align: left;
+  width: 67px;
+  margin-left: 0px;
+  position: absolute;
+  bottom: -10px;
+  right: 30px;
+}
 .service-input-number{
   box-sizing: border-box;
   width: 50px;
@@ -246,8 +256,14 @@
   text-align-last: center;
   outline: none;
   border-radius: 0px;
-  background-color: #FFFFFF;
+  background-color: transparent;
   border: solid 1px #e5e5e5;
+}
+select.service-input-number-select:focus{
+  background-color: transparent;
+}
+select.service-input-number-select option{
+  background-color: transparent;
 }
 .service-input-number-select-box{
   box-sizing: border-box;
@@ -260,19 +276,35 @@
   position: absolute;
   right: 6px;
   top: 13px;
-  color: #e66700
+  color: #e66700;
+  z-index: -1;
 }
 .service-input-number::placeholder{
   font-size: 15px;
   color: #9b9b9b;
+}
+select.input-apartment{
+  border-radius: 0px;
+  color: #9b9b9b;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+select.input-apartment option {
+    margin: auto;
+    background: transparent;
+    color: #9b9b9b;
 }
 .apartment-service-box{
   padding-right: 47px;
   padding-left: 47px;
   padding-bottom: 28px;
 }
+.apartment-service-box.built{
+  position: relative;
+}
 .apartment-services-container{
   padding-top: 67px;
+  padding-bottom: 30px;
 }
 .apartment-divider-text{
   width: 294px;
@@ -339,7 +371,7 @@
     border: solid 1px #e6e6e6 !important;
 }
 .apartment-checkbox-container{
-  padding-top: 59px;
+  padding-top: 100px;
 }
 .e-icon-circle{
   width: 27px;
@@ -453,4 +485,7 @@
   float: right;
   margin-right: 35px;
   margin-top: -5px;
+}
+.cierralo-link{
+  text-decoration: none;
 }

@@ -2,6 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script type='application/ld+json'> 
+        {
+          "@context": "http://www.schema.org",
+          "@type": "ProfessionalService",
+          "name": "Cierralo",
+          "url": "http://www.cierralo.mx",
+          "logo": "http://neopraxis.mx/images/icons/neopraxis-logo-png@3x.png",
+          "image": "http://neopraxis.mx/images/icons/neopraxis-logo-png@3x.png",
+          "description": "Vende o compra departamentos, ¡Sin comisión de corredores!"
+        }
+     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     {% block meta %}{% endblock %}
     {% block extra_css %}{% endblock %}
@@ -52,6 +63,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.0/slick-theme.css" rel="stylesheet"/>
     <!--FontAwesome css file-->
     <script src="https://use.fontawesome.com/06b6ef868a.js"></script>
+    <meta name="description" content="Vende o compra departamentos, ¡Sin comisión de corredores!">
+    <meta name="keywords" content="Aparments">
+    <meta name="author" content="Cierralo">
+
+    <meta property="og:image" content="http://neopraxis.mx/og-image.jpg">
+    <meta property="og:image:width" content="279">
+    <meta property="og:image:height" content="279">
+    <meta property="og:title" content="Cierralo">
+    <meta property="og:description" content="Adios a los corredores de inmuebles, te llevamos de la mano para lograr la compra - venta.">
+    <meta property="og:url" content="http://neopraxis.mx">
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <title>{% if section != 'index' %}{% block title %}{% endblock %} - {% endif %}{{ projectName }}</title>
   </head>

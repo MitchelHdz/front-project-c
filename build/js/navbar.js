@@ -21,10 +21,10 @@ var menu = document.getElementById('userMenu');
 var body = document.getElementById('body');
 // When the user clicks on the button, open the modal 
 dropdown.onclick = function() {
-  menu.classList.toggle('active');
+	menu.classList.toggle('active');
 }
 window.onclick = function(event) {
-  if (event.target == menu) {
-    menu.classList.toggle('active');
-  }
+	if (event.target == menu) {
+		menu.classList.toggle('active');
+	}
 }

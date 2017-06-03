@@ -73,6 +73,20 @@
 	top: 50px;
 	font-size: 9px;
 }
-.phone-tooltip-box:hover .tooltip-text{
+.navbar-arrow-down{
+	position: absolute;
+	top: 42px;
+	right: 25px;
+	width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #ffffff;
+    z-index: 9;
+    visibility: hidden;
+}
+.phone-tooltip-box:hover .tooltip-text, .phone-tooltip-box:hover .navbar-arrow-down{
+	visibility: visible;
+}{
 	visibility: visible;
 }

@@ -45,10 +45,10 @@ window.onload = function() {
 function removeHidden() {
 	var hiddens = document.getElementsByClassName("hidden");
 	var paddings = document.getElementsByClassName("fix-paddings");
-		while (hiddens.length)
-		    hiddens[0].classList.remove("hidden");
-		while (paddings.length)
-		    paddings[0].classList.remove("fix-paddings");
+	while (hiddens.length)
+		hiddens[0].classList.remove("hidden");
+	while (paddings.length)
+		paddings[0].classList.remove("fix-paddings");
 }
 function greyHidden() {
 	removeHidden();

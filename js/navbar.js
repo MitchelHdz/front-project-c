@@ -4,13 +4,13 @@ document.querySelector('#cierralo-hamburger-menu').addEventListener('click', fun
 });
 
 document.querySelector('#body').addEventListener('click', function (e) {
-	if (document.querySelector('#cierralo-hamburger-menu').classList.contains('is-active') && e.target.tagName !== 'SPAN' && e.target.tagName !== 'a') {
+	if (document.querySelector('#cierralo-hamburger-menu').classList.contains('is-active') && e.target.tagName !== 'SPAN' && e.target.tagName !== 'A') {
 		document.querySelector('#cierralo-hamburger-menu').classList.remove('is-active');
 		document.querySelector('#cierralo-main-navbar').classList.remove('cierralo-navbar-style');
 	}
 });
 document.querySelector("#body").addEventListener( "touchstart",function (e) {
-	if (document.querySelector('#cierralo-hamburger-menu').classList.contains('is-active') && e.target.tagName !== 'SPAN' && e.target.tagName !== 'a') {
+	if (document.querySelector('#cierralo-hamburger-menu').classList.contains('is-active') && e.target.tagName !== 'SPAN' && e.target.tagName !== 'A') {
 		document.querySelector('#cierralo-hamburger-menu').classList.remove('is-active');
 		document.querySelector('#cierralo-main-navbar').classList.remove('cierralo-navbar-style');
 	}
@@ -21,10 +21,10 @@ var menu = document.getElementById('userMenu');
 var body = document.getElementById('body');
 // When the user clicks on the button, open the modal 
 dropdown.onclick = function() {
-  menu.classList.toggle('active');
+	menu.classList.toggle('active');
 }
 window.onclick = function(event) {
-  if (event.target == menu) {
-    menu.classList.toggle('active');
-  }
+	if (event.target == menu) {
+		menu.classList.toggle('active');
+	}
 }

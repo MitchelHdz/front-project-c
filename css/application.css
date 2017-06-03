@@ -355,3 +355,6 @@ span.textLogo {
 button{
     outline: none !important;
 }
+.no-margin-text{
+    margin: 0;
+}

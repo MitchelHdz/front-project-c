@@ -24,6 +24,9 @@
 .orange-block-text{
 	font-size: 17px;
 }
+.orange-block-text.two{
+	font-size: 15px;
+}
 .orange-block-text-box{
 	width: 287px;
 	text-align: center;

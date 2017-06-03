@@ -1,6 +1,6 @@
 var switchOptions = document.getElementsByClassName("switch-option");
 var toggleSwitchOption = function() {
-   if(this.classList.contains('switch-yes-box')){
+	if(this.classList.contains('switch-yes-box')){
 		if(this.classList.contains('active')){
 			this.classList.remove('active');
 			var noSwitch = document.getElementById("switch-no");
@@ -26,7 +26,7 @@ var toggleSwitchOption = function() {
 	}
 };
 for (var i = 0; i < switchOptions.length; i++) {
-    switchOptions[i].addEventListener('click', toggleSwitchOption, false);
+	switchOptions[i].addEventListener('click', toggleSwitchOption, false);
 }
 // Get the modal
 var alertModal = document.getElementById('alertModal');

@@ -4,13 +4,13 @@ document.querySelector('#cierralo-hamburger-menu').addEventListener('click', fun
 });
 
 document.querySelector('#body').addEventListener('click', function (e) {
-	if (document.querySelector('#cierralo-hamburger-menu').classList.contains('is-active') && e.target.tagName !== 'SPAN' && e.target.tagName !== 'a') {
+	if (document.querySelector('#cierralo-hamburger-menu').classList.contains('is-active') && e.target.tagName !== 'SPAN' && e.target.tagName !== 'A') {
 		document.querySelector('#cierralo-hamburger-menu').classList.remove('is-active');
 		document.querySelector('#cierralo-main-navbar').classList.remove('cierralo-navbar-style');
 	}
 });
 document.querySelector("#body").addEventListener( "touchstart",function (e) {
-	if (document.querySelector('#cierralo-hamburger-menu').classList.contains('is-active') && e.target.tagName !== 'SPAN' && e.target.tagName !== 'a') {
+	if (document.querySelector('#cierralo-hamburger-menu').classList.contains('is-active') && e.target.tagName !== 'SPAN' && e.target.tagName !== 'A') {
 		document.querySelector('#cierralo-hamburger-menu').classList.remove('is-active');
 		document.querySelector('#cierralo-main-navbar').classList.remove('cierralo-navbar-style');
 	}

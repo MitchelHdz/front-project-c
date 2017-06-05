@@ -1,5 +1,5 @@
 jQuery(document).ready(function() { 
-    var dates = ['22/4/2017', '25/4/2017', '29/4/2017', '13/4/2017', '17/4/2017']; //
+    var dates = ['22/5/2017', '25/5/2017', '29/5/2017', '13/5/2017', '17/5/2017']; //
     //tips are optional but good to have
     var tips  = ['some description','some other description'];      
 
@@ -58,6 +58,7 @@ btn.onclick = function() {
   modal.classList.add('modal-open');
   body.classList.add('modal-open');
   google.maps.event.trigger(map, "resize");
+
 }
 
 // When the user clicks on <span> (x), close the modal

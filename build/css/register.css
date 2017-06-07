@@ -62,3 +62,15 @@
 .user-options-container{
 	padding-top: 2px;
 }
+.cierralo-register-btn {
+    width: 127px;
+    height: 39px;
+    border-radius: 100px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-top: 79px;
+    font-size: 15px;
+}

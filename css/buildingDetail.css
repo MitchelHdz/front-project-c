@@ -7,6 +7,7 @@
     margin-bottom: 0;
     color: #fff;
     height: 428px;
+    position: relative;
 }
 .more-icon-gallery{
 	width: 21px;
@@ -436,4 +437,47 @@
 .credentials-dropzone-icon{
 	width: 25px;
 	height: 32px;
+}
+.building-detail-type-contract-text{
+	font-size: 18px;
+	line-height: 18.3px;
+}
+.building-detail-type-contract-box.sell{
+	position: absolute;
+	left: 0px;
+	top: 35px;
+	height: 46px;
+	width: 122px;
+	background-color: #f36b24;
+	box-sizing: border-box;
+	padding-left: 18px;
+	padding-top: 5px;
+	text-align: left;
+
+}
+.building-detail-type-contract-box.rent{
+	position: absolute;
+	left: 0px;
+	top: 35px;
+	height: 46px;
+	width: 122px;
+	background-color: #f69718;
+	box-sizing: border-box;
+	padding-left: 18px;
+	padding-top: 5px;
+	text-align: left;
+
+}
+.building-detail-type-contract-box.mixed{
+	position: absolute;
+	left: 0px;
+	top: 35px;
+	height: 46px;
+	width: 210px;
+	background-color: #c84d26;
+	box-sizing: border-box;
+	padding-left: 18px;
+	padding-top: 5px;
+	text-align: left;
+
 }

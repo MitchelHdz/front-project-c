@@ -135,16 +135,30 @@
                 
 
 <div id="list-building" class="cierralo-default-section content scaffold-list" role="main">
-  <h1 class="cierralo-title cierralo-font-helveltica-medium">Todas las propiedades</h1>
-
-  <div class="cierralo-default-divider"></div>
+  <h1 class="cierralo-title cierralo-font-helveltica-medium">Departamentos</h1>
   <div class="cierralo-all-building-container">
     <div class="cierralo-all-buildings">
     </div>
     <div class="cierralo-filter-buildings">
       <div class="cierralo-font-helveltica-neue-light cierralo-filter-left">
         <div>
+          <div class="aparment-type-box">
+            <select name="" placeholder="Filtrar por" class="cierralo-font-helveltica-neue-light aparment-type-select">
+              <option value="" disabled selected>Filtrar por</option>
+              <option value="rent">Renta</option>
+              <option value="sell">Venta</option>
+              <option value="all">Mostrar todo</option>
+            </select>
+            <i class="fa fa-caret-down aparment-type-select-arrow" aria-hidden="true"></i>
+            <div class="aparment-type-select-options-box">
+              <div class="aparment-type-select-options-arrow"></div>
+              <p class="cursor-pointer aparment-type-select-item cierralo-white-text cierralo-font-helveltica-neue first" option="rent">Renta</p>
+              <p class="cursor-pointer aparment-type-select-item cierralo-white-text cierralo-font-helveltica-neue" option="sell">Venta</p>
+              <p class="cursor-pointer aparment-type-select-item cierralo-white-text cierralo-font-helveltica-neue last" option="all">Mostrar todo</p>
+            </div>
+          </div>
           <div><p class="no-margin-text">Precio</p></div>
+          <div class="cierralo-filter-divider"></div>
           <div class="cierralo-slider">
             <section class="range-slider">
               <div class="slider-value-container inline-block" id="slide-box-1">
@@ -165,7 +179,12 @@
           </div>
         </div>
         <div class="municipality-container">
-          <div>Delegación</div>
+          <div>Ubicación</div>
+          <div class="cierralo-filter-divider"></div>
+          <div class="location-input-box">
+            <input type="text" name="" value="" placeholder="Roma" class="location-input-search cierralo-font-helveltica-neue-light">
+          </div>
+          <button class="cierralo-font-helveltica-medium cierralo-search-location-btn cierralo-btn-secondary cursor-pointer hover-btn-orange" id="postButton">Buscar</button>
         </div>
       </div>
     </div>

@@ -392,6 +392,7 @@ span.textLogo {
     flex-direction:row;
     width: 90%;
     padding-bottom: 150px;
+    padding-top: 61px;
 }
 .cierralo-all-building-container > div {
     margin: 0px 1.5rem;
@@ -436,13 +437,57 @@ span.textLogo {
 }
 .cierralo-all-price {
     position: absolute;
-    top:12px;
-    line-height: 1.4rem;
+    top:13px;
     width: 60px;
     height: 22.6px;
     background-color: #e5e5e5;
-    right: 0;
+    left: 0;
     color: #6b6b6b;
+    font-size: 12px;
+}
+.cierralo-all-price.rent{
+    position: absolute;
+    padding-top: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 13px;
+    top:13px;
+    width: 76px;
+    height: 36px;
+    background-color: #f69718;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+.cierralo-all-price.sell{
+    position: absolute;
+    padding-top: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 13px;
+    top:13px;
+    width: 76px;
+    height: 36px;
+    background-color: #f36b24;
+    left: 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+.cierralo-all-price.mixed{
+    position: absolute;
+    padding-top: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 13px;
+    top:13px;
+    width: 131px;
+    height: 36px;
+    background-color: #c84d26;
+    left: 0;
+    color: #ffffff;
     font-size: 12px;
 }
 .cierralo-all-title {
@@ -817,4 +862,118 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 .building-block-link{
     text-decoration: none;
+}
+.cierralo-search-location-btn {
+    width: 106px;
+    height: 35px;
+    border-radius: 100px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 8px 8px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+.location-input-search{
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #d8d8d8;
+    background-color: #ffffff;
+    border: solid 1px #d8d8d8;
+}
+.location-input-search:focus{
+    box-sizing: border-box;
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #d8d8d8;
+    background-color: #ffffff;
+    border: solid 1px #d8d8d8;
+}
+.location-input-search::placeholder{
+    color: #d8d8d8;
+    font-family: 'HelveticaNeue-Light'
+}
+.aparment-type-select{
+    font-size: 16px;
+    color: #6f6c70;
+    box-sizing: border-box;
+    width: 199px;
+    height: 26px;
+    padding-left: 8px;
+    background-color: transparent;
+    border: solid 1px #d8d8d8;
+    -webkit-appearance: none;
+    border-radius: 0px;
+}
+.aparment-type-select:focus{
+    font-size: 16px;
+    color: #6f6c70;
+    box-sizing: border-box;
+    width: 199px;
+    height: 26px;
+    padding-left: 8px;
+    background-color: transparent;
+    border: solid 1px #d8d8d8;
+    -webkit-appearance: none;
+    border-radius: 0px;
+}
+.aparment-type-box{
+    position: relative;
+    width: 201px;
+    padding-bottom: 49px;
+}
+.aparment-type-select-arrow{
+    color: #d8d8d8;
+    position: absolute;
+    right: 9px;
+    top: 6px;
+    z-index: -1;
+}
+.aparment-type-select-options-box{
+    width: 202px;
+    position: absolute;
+    border-radius: 3px;
+    box-sizing: border-box;
+    top: 40px;
+    z-index: +2;
+    display: none;
+}
+.aparment-type-select-item{
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+    font-size: 14px;
+    background-color: #e66700;
+    border-bottom: solid 1px #ffffff;
+    -webkit-transition:: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+.aparment-type-select-item.first{
+    border-radius: 3px 3px 0px 0px;
+}
+.aparment-type-select-item.last{
+    border-radius: 0px 0px 3px 3px;
+}
+.aparment-type-select-item:hover{
+    background-color: #f69718;
+}
+.aparment-type-select-options-arrow{
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #e66700;
+  position: absolute;
+  right: 10px;
+  top: -5px;
 }

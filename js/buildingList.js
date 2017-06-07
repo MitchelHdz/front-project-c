@@ -44,24 +44,51 @@ $.ajax({
   success:function(data) {
     var buildList = JSON.stringify(data);
     for (var i = 0; i < data.Propiedades.length; i++) {
-      $('.municipality-container').append('<div class="cierralo-municipality cierralo-font-helveltica-neue-light cursor-pointer">'+ data.Propiedades[i].colonia +'</div>');
       var services = '<div class="cierralo-end-container"><div class="cierralo-all-title cierralo-font-helveltica-medium">'+ data.Propiedades[i].calle +'</div><div class="cierralo-all-subtitle cierralo-font-helveltica-thin">'+ data.Propiedades[i].colonia +'</div><div class="cierralo-all-features cierralo-font-helveltica-medium"><p class="feature-text inline-block first-line">'+ data.Propiedades[i].metrosCuadrados +' m2</p><p class="feature-text inline-block middle-line">'+ data.Propiedades[i].cuartos +' cuartos</p><p class="feature-text inline-block middle-line">'+ data.Propiedades[i].toilets +' baños</p><p class="feature-text inline-block last-line">'+ data.Propiedades[i].PisoEnElQueSeEncuentra +' E</p></div></div>';
-      var dudeInfo = '<div class="cierralo-inner-container"><div class="cierralo-all-face cierralo-font-helveltica-thin"><div class="cierralo-face-rounder" style="background: url(\'./img/dude.png\')"></div><p class="owner-name">José</p></div><div class="cierralo-all-fav"><i class="fa fa-heart-o icon-love" aria-hidden="true"></i></div><div class="cierralo-all-price">'+ data.Propiedades[i].precio.substring(1, 4) +' MDP</div>'+ services +'</div>';
-      var buildBox = '<a class="cursor-pointer building-block-link" href="./buildingDetail.html?build='+i+'"><div class="cierralo-building-feature" style="background: url(\'https://habita.la/images/complete/28b972506123d81bd456afa35b2c37bc.JPG\');">'+ dudeInfo +'</div></a>'
+      if(data.Propiedades[i].typeContract == '1'){
+        var dudeInfo = '<div class="cierralo-inner-container"><div class="cierralo-all-face cierralo-font-helveltica-thin"><div class="cierralo-face-rounder" style="background: url(\'./img/dude.png\')"></div><p class="owner-name">José</p></div><div class="cierralo-all-fav"><i class="fa fa-heart-o icon-love" aria-hidden="true"></i></div><div class="cierralo-all-price sell cierralo-font-helveltica-neue-light"><b>Venta</b><br/>'+ data.Propiedades[i].precio + '</div>'+ services +'</div>';
+        sliderRangeValue.push(data.Propiedades[i].precio.substring(1, 4));
+        var buildBox = '<a class="cursor-pointer building-block-link" href="./buildingDetail.html?build='+i+'"><div class="cierralo-building-feature sell" style="background: url(\'https://habita.la/images/complete/28b972506123d81bd456afa35b2c37bc.JPG\');">'+ dudeInfo +'</div></a>';
+      }
+      else if(data.Propiedades[i].typeContract == '2'){
+        var dudeInfo = '<div class="cierralo-inner-container"><div class="cierralo-all-face cierralo-font-helveltica-thin"><div class="cierralo-face-rounder" style="background: url(\'./img/dude.png\')"></div><p class="owner-name">José</p></div><div class="cierralo-all-fav"><i class="fa fa-heart-o icon-love" aria-hidden="true"></i></div><div class="cierralo-all-price rent cierralo-font-helveltica-neue-light"><b>Renta</b><br/>$'+ data.Propiedades[i].rent + '</div>'+ services +'</div>';
+        sliderRangeValue.push(data.Propiedades[i].rent);
+        var buildBox = '<a class="cursor-pointer building-block-link" href="./buildingDetail.html?build='+i+'"><div class="cierralo-building-feature rent" style="background: url(\'https://habita.la/images/complete/28b972506123d81bd456afa35b2c37bc.JPG\');">'+ dudeInfo +'</div></a>';
+      }
+
+      else if(data.Propiedades[i].typeContract == '3'){
+        var dudeInfo = '<div class="cierralo-inner-container"><div class="cierralo-all-face cierralo-font-helveltica-thin"><div class="cierralo-face-rounder" style="background: url(\'./img/dude.png\')"></div><p class="owner-name">José</p></div><div class="cierralo-all-fav"><i class="fa fa-heart-o icon-love" aria-hidden="true"></i></div><div class="cierralo-all-price mixed cierralo-font-helveltica-neue-light"><b>Venta y renta</b><br/>'+ data.Propiedades[i].precio + ' | $'+ data.Propiedades[i].rent + '</div>'+ services +'</div>';
+        sliderRangeValue.push(data.Propiedades[i].precio.substring(1, 4));
+        var buildBox = '<a class="cursor-pointer building-block-link" href="./buildingDetail.html?build='+i+'"><div class="cierralo-building-feature mixed" style="background: url(\'https://habita.la/images/complete/28b972506123d81bd456afa35b2c37bc.JPG\');">'+ dudeInfo +'</div></a>';
+      }
       $('.cierralo-all-buildings').append(buildBox);
-      sliderRangeValue.push(data.Propiedades[i].precio.substring(1, 4));
     }
     municipalityClick();
     iconLovers()
-    var seen = {};
-    $('.cierralo-municipality').each(function() {
-      var txt = $(this).text();
-      console.log(txt);
-      if (seen[txt] == true)
-        $(this).remove();
-      else
-        seen[txt] = true;
-    });
+  }
+});
+$('.aparment-type-select').on('click', function(event) {
+  event.preventDefault();
+  /* Act on the event */
+  this.blur();
+  window.focus();
+  $('.aparment-type-select-options-box').toggle();
+});
+$('.aparment-type-select-item').on('click', function(event) {
+  event.preventDefault();
+  /* Act on the event */
+  $('.aparment-type-select-options-box').toggle();
+  $('.aparment-type-select').val($(this).attr('option'));
+  if ($(this).attr('option') == 'sell'){
+    $('.cierralo-building-feature').show();
+    $('.cierralo-building-feature').not('.cierralo-building-feature.sell').hide();
+  }
+  if ($(this).attr('option') == 'rent'){
+    $('.cierralo-building-feature').show();
+    $('.cierralo-building-feature').not('.cierralo-building-feature.rent').hide();
+  }
+  if ($(this).attr('option') == 'all'){
+    $('.cierralo-building-feature').show();
   }
 });
 sliderRangeValue.sort();
@@ -97,7 +124,6 @@ function getVals(){
   var slider2 = document.getElementById('slider-2');
   slider1.innerHTML = slide1 + " MDP";
   slider2.innerHTML = slide2 + " MDP";
-  console.log($(this).position());
   $('.cierralo-all-price').each(function(index, el) {
     $(this).closest('cierralo-building-feature').show();
     var priceValue = $(this).text();

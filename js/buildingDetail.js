@@ -102,14 +102,28 @@ $.ajax({
         type: "GET",
         dataType: 'json',
         success:function(data) {
+            if (data.Propiedades[build].typeContract == '1') {
+                var buildingTypeContract = '<div class="building-detail-type-contract-box sell"><p class="no-margin-text cierralo-font-helveltica-neue-light cierralo-white-text building-detail-type-contract-text letter-spacing-dot-three"><b>Venta</b><br/>'+ data.Propiedades[build].precio + '</p></div>'
+                $('.building-parallax').append(buildingTypeContract);
+                $('.building-price-text').text(data.Propiedades[build].precio);
+            }
+            else if (data.Propiedades[build].typeContract == '2') {
+                var buildingTypeContract = '<div class="building-detail-type-contract-box rent"><p class="no-margin-text cierralo-font-helveltica-neue-light cierralo-white-text building-detail-type-contract-text letter-spacing-dot-three"><b>Renta</b><br/>$'+ data.Propiedades[build].rent + '</p></div>'
+                $('.building-parallax').append(buildingTypeContract);
+                $('.building-price-text').text('$' + data.Propiedades[build].rent);
+            }
+            else if (data.Propiedades[build].typeContract == '3') {
+                var buildingTypeContract = '<div class="building-detail-type-contract-box mixed"><p class="no-margin-text cierralo-font-helveltica-neue-light cierralo-white-text building-detail-type-contract-text letter-spacing-dot-three"><b>Venta | renta</b><br/>'+ data.Propiedades[build].precio + ' | $'+data.Propiedades[build].rent +'</p></div>'
+                $('.building-parallax').append(buildingTypeContract);
+                $('.building-price-text').text(data.Propiedades[build].precio + ' | $' + data.Propiedades[build].rent);
+            } 
             $('.building-street-text').text(data.Propiedades[build].calle);
             $('.building-place-text').text(data.Propiedades[build].colonia);
-            $('.building-price-text').text(data.Propiedades[build].precio.substring(1, 4) + ' MDP');
             $('.building-full-address-text').text(data.Propiedades[build].calle + ' Colonia ' + data.Propiedades[build].colonia + ' ' + data.Propiedades[build].estado + ' ' + data.Propiedades[build].pais);
         	$('.building-feature-text.meters').text(data.Propiedades[build].metrosCuadrados + ' m2');
         	$('.building-feature-text.rooms').text(data.Propiedades[build].cuartos + ' cuartos');
         	$('.building-feature-text.toilets').text(data.Propiedades[build].toilets + ' baños');
-        	$('.building-feature-text.places').text(data.Propiedades[build].PisoEnElQueSeEncuentra + ' espacios');
+        	$('.building-feature-text.places').text('Piso ' + data.Propiedades[build].PisoEnElQueSeEncuentra);
         	$('.building-about-text').text(data.Propiedades[build].descripción);
             if(data.Propiedades[build].gimnasio == 'no'){
                 $('.service-box.gym').hide();

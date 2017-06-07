@@ -158,12 +158,20 @@
           </div>
         </div>
         <div class="search-bar-container">
-          <div class="search-icon-box">
-            <img src="./img/icons/group-5@3x.png" alt="" class="search-icon-bar">
+          <div class="search-bar-select-box">
+            <i class="fa fa-caret-down search-bar-select-arrow cursor-pointer" aria-hidden="true"></i>
+            <select name="" class="search-bar-select cierralo-font-helveltica-neue hover-btn-orange-lighter cursor-pointer">
+              <option value="">Renta</option>
+              <option value="">Compra</option>
+            </select>
           </div>
           <input type="text" name="" value="" placeholder="Buscar por delegación" class="search-bar-input inline-block cierralo-font-helveltica-neue">
           <a href="./buildingList.html">
-            <button type="" class="search-bar-button inline-block cierralo-font-helveltica-bold cursor-pointer">Buscar</button>
+            <button type="" class="search-bar-button inline-block cierralo-font-helveltica-bold cursor-pointer">
+              <div class="search-icon-box">
+              <img src="./img/icons/group-5@3x.png" alt="" class="search-icon-bar">
+            </div>
+            Buscar</button>
           </a>
         </div>
         <div class="or-divider-container">
@@ -177,7 +185,7 @@
             
           </div>
         </div>
-        <a href="./postAparmentFeatures.html">
+        <a href="./register.html">
           <button class="cierralo-font-helveltica-medium cierralo-post-header-btn cierralo-btn-secondary cursor-pointer hover-btn-orange-lighter" id="postButton">Publica tu departamento</button>
         </a>
       </div>
@@ -396,8 +404,12 @@
       <div class="cierralo-flex-colum">
         <p class="cierralo-last-title cierralo-font-helveltica-medium cierralo-black-text">¡Regístrate!</p>
         <div class="cierralo-buttons-landing-container">
-          <a class="cierralo-btn-secondary cierralo-default-btn cierralo-font-helveltica-medium cursor-pointer hover-btn-orange" href="./login.html">Comprar</a>
-          <a class="cierralo-btn-primary cierralo-default-btn cierralo-font-helveltica-medium cursor-pointer hover-btn-orange-lighter" href="./login.html">Vender</a>
+          <a class="cursor-pointer cierralo-link" href="./register.html">
+            <p class="no-margin-text cierralo-btn-secondary cierralo-landing-default-btn cierralo-font-helveltica-medium hover-btn-orange inline-block">Buscar departamento</p>
+          </a>
+          <a class="cursor-pointer cierralo-link" href="./register.html">
+            <p class="no-margin-text cierralo-btn-primary cierralo-landing-default-btn cierralo-font-helveltica-medium hover-btn-orange-lighter inline-block">Publicar departamento</p>
+          </a>
         </div>
       </div>
     </div>

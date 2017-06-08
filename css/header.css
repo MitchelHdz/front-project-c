@@ -22,12 +22,12 @@
 }
 .navbar-user-menu-item{
 	width: 100%;
-	background-color: #525252;
+	background-color: #e66700;
 	color: #FFFFFF !important;
 	padding: 0px !important;
 }
 .navbar-user-menu-item:hover{
-	background-color: #a1a1a1;
+	background-color: #f69718;
 }
 .navbar-user-link{
 	text-decoration: none;
@@ -38,7 +38,8 @@
 	border-radius: 0px !important;
 }
 .navbar-user-link.first{
-	background-color: #a1a1a1;
+	background-color: #f69718;
+	border-radius: 3px 0px 0px 3px;
 } 
 .navbar-user-link.medium{
 	border-top: solid 1px #ffffff;

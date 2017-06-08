@@ -357,6 +357,7 @@
     position: absolute;
     top: 50%;
     margin-top: -12px;
+    display: none !important;
 }
 .hours-next {
     right: 25px !important;
@@ -365,6 +366,7 @@
     position: absolute;
     top: 50%;
     margin-top: -12px;
+    display: none !important;
 }
 .slick-current .hourslider-text{
 	font-size: 23px !important;

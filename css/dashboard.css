@@ -217,6 +217,38 @@
 .discover-slider .slider{
   width: 100% !important;
 }
+.dashboard-building-label-type.rent{
+  position: absolute;
+  width: 48px;
+  height: 18px;
+  background-color: #f69718;
+  top: 11px;
+  left: 0px;
+}
+.dashboard-building-label-type.sell{
+  position: absolute;
+  width: 42px;
+  height: 18px;
+  background-color: #e66700;
+  top: 11px;
+  left: 0px;
+}
+.dashboard-building-label-type.mixed{
+  position: absolute;
+  width: 82px;
+  height: 18px;
+  background-color: #c84d26;
+  top: 11px;
+  left: 0px;
+}
+.dashboard-building-photo-container{
+  position: relative;
+}
+.dashboard-building-label-text{
+  font-size: 12px;
+  padding-left: 8px;
+  padding-top: 2px;
+}
 @media only screen and (max-width: 1030px){
   .dashboard-building-container{
     width: 245px;

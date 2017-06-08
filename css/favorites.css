@@ -97,6 +97,7 @@
     margin: 0;
     padding: 9px 23px;
     margin-top: 20px;
+    margin-left: 5px;
 }
 .favorite-offer-it-btn {
     width: 100px;
@@ -108,7 +109,7 @@
     margin: 0;
     padding: 9px 23px;
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 .favorite-container {
     margin: auto;
@@ -136,10 +137,10 @@
     margin: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 4px;
+    padding-left: 8px;
     padding-right: 4px;
     font-size: 12px;
-    text-align: center;
+    text-align: left;
 }
 .favorite-building-cost-container {
     position: absolute;
@@ -148,6 +149,30 @@
     width: 76px;
     height: 23px;
     background-color: #f36b24;
+}
+.favorite-building-cost-container.sell {
+    position: absolute;
+    left: 0;
+    top: 21px;
+    width: 76px;
+    height: 36px;
+    background-color: #f36b24;
+}
+.favorite-building-cost-container.rent {
+    position: absolute;
+    left: 0;
+    top: 21px;
+    width: 60px;
+    height: 36px;
+    background-color: #f69718;
+}
+.favorite-building-cost-container.mixed {
+    position: absolute;
+    left: 0;
+    top: 21px;
+    width: 137px;
+    height: 36px;
+    background-color: #c84d26;
 }
 .favorite-user-name-container {
     vertical-align: top;

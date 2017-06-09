@@ -102,8 +102,14 @@
         <img src="./img/profile-circle.png" alt="" class="navbar-user-photo-circle inline-block">
         <ul class="cierralo-dropdown-menu" id="userMenu">
           <div class="dropdown-arrow-up"></div>
-          <li class="navbar-user-menu-item"><a href="./profileEdit.html" class="navbar-user-link first cierralo-white-text cierralo-font-helveltica-neue">Mi perfil</a></li>
-          <li class="navbar-user-menu-item"><a href="./dashboard.html" class="navbar-user-link medium cierralo-white-text cierralo-font-helveltica-neue">Historial de compras</a></li>
+          <li class="navbar-user-menu-item">
+            
+              <a href="./profileEdit.html" class="navbar-user-link cierralo-white-text cierralo-font-helveltica-neue">Mi perfil</a></li>
+            
+          <li class="navbar-user-menu-item">
+            
+              <a href="./dashboard.html" class="navbar-user-link medium cierralo-white-text cierralo-font-helveltica-neue">Historial de compras</a></li>
+            
           <li class="navbar-user-menu-item"><a href="./index.html" class="navbar-user-link cierralo-white-text cierralo-font-helveltica-neue">Cerrar sesión</a></li>
         </ul>
       </li>
@@ -118,9 +124,9 @@
 
         
         
-        <main id="main" class="web-area">
-            
-                
+          <main id="main" class="web-area">
+        
+        
 <div class="grey-navbar cierralo-flex-row-start">
   <a href="./dashboard.html" class="grey-navbar-link">
     
@@ -153,20 +159,48 @@
 </div>
 <div id="alertModal" class="modal">
     <!-- Modal content -->
-    <div class="alert-modal-content cierralo-flex-colum">
+    <div class="alert-modal-content schedule cierralo-flex-colum">
       <div class="modal-close-btn-container">
         <span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
       </div>
       <div class="alert-modal-body schedule">
-        <h1 class="alert-text-one cierralo-white-text cierralo-font-helveltica-bold letter-spacing-dot-three">Cancelar cita</h1>
-        <h2 class="alert-text-two cierralo-font-helveltica-neue-light cierralo-purplish-grey letter-spacing-dot-three">¿Estás seguro que deseas cancelar la cita de visita a tu departamento?</h2>
-        <h2 class="alert-text-two cierralo-font-helveltica-neue-light cierralo-purplish-grey letter-spacing-dot-three">Se le enviará un correo electrónico al propietario para notificarle.</h2>
+        <h1 class="alert-text-one schedule cierralo-white-text cierralo-font-helveltica-bold letter-spacing-dot-three">Cancelar cita</h1>
+        <h2 class="alert-text-two cierralo-font-helveltica-neue-light cierralo-white-text letter-spacing-dot-three">¿Estás seguro que deseas cancelar la cita de visita a tu departamento?</h2>
+        <h2 class="alert-text-two cierralo-font-helveltica-neue-light cierralo-white-text letter-spacing-dot-three">Se le enviará un correo electrónico al propietario para notificarle.</h2>
       </div>
-      <div class="modal-footer">
-        <h2 class="alert-text-three cierralo-font-helveltica-neue-light cierralo-white-text letter-spacing-dot-three">Hemos notificado al vendedor y tendrás noticias pronto acerca de su desición</h2>
+      <div class="modal-footer schedule">
+        <div class="orange-modal-arrow"></div>
+        <a href="#" class="no-decoration">
+          <button class="cierralo-font-helveltica-neue schedule-cancel-it-btn cierralo-btn-primary cierralo-remove-margin cursor-pointer inline-block hover-btn-orange-lighter" id="closeItButton">No, regresar</button>
+        </a>
+        <a href="#" class="no-decoration" id="confirmCancelBtn">
+          <button class="cierralo-font-helveltica-neue schedule-accept-it-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer inline-block hover-btn-orange" id="closeItButton">Si, deseo cancelar</button>
+        </a>
       </div>
     </div>
   </div>
+<div id="cancelModal" class="modal">
+  <!-- Modal content -->
+  <div class="alert-modal-content cierralo-flex-colum">
+    <div class="modal-close-btn-container" id="closeCancel">
+      <span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
+    </div>
+    <div class="arrow-check-circle middle cierralo-flex-row cursor-pointer">
+      <img src="./img/icons/shape@3x.png" alt="Completado" class="arrow-check-icon middle">
+    </div>
+    <div class="alert-modal-body">
+      <h1 class="alert-text-two apartment cierralo-font-helveltica-medium cierralo-purplish-grey letter-spacing-dot-three">Cita cancelada</h1>
+    </div>
+    <div class="modal-footer">
+      <h2 class="alert-text-three cancel-schedule cierralo-font-helveltica-neue-light cierralo-white-text letter-spacing-dot-three">Haz rechazado la cita programada con el propietario</h2>
+      <a href="./schedule.html" class="apartment-link">
+        <div class="continue-modal-button-box">
+          <div class="continiue-modal-button-text cierralo-font-helveltica-neue cierralo-white-text"><p class="no-margin-text">Continuar</p></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
 <div id="content" role="main" class="cierralo-content">
   <div class="schedule-header cierralo-flex-colum">
     <h1 class="schedule-title cierralo-font-helveltica-medium cierralo-purplish-grey-two">Citas Agendadas</h1>
@@ -203,7 +237,7 @@
           <img src="./img/icons/tooltip.png" class="schedule-address-info-icon inline-block">
           <p class="schedule-address-info-text inline-block cierralo-white-text cierralo-font-helveltica-neue">Agendado</p>
         </div>
-        <a class="cursor-pointer cierralo-link" href="./register.html">
+        <a class="cursor-pointer cierralo-link" href="#" id="cancelSchedule">
             <p class="no-margin-text cierralo-btn-primary cierralo-schedule-cancel-btn cierralo-font-helveltica-neue hover-btn-orange-lighter inline-block">Cancelar</p>
           </a>
       </div>
@@ -213,14 +247,14 @@
   </div>
 </div>
 
-            </main>
-            
-            <div class="mobile-alert-container cierralo-flex-colum">
+        </main>
+        
+        <div class="mobile-alert-container cierralo-flex-colum">
 	<h1 class="mobile-alert-title cierralo-orange-text letter-spacing-dot-six cierralo-font-helveltica-bold">¡Lo sentimos!</h1>
 	<p class="mobile-alert-text cierralo-purplish-grey letter-spacing-dot-six cierralo-font-helveltica-neue-light">Para poder ver esta sección es necesario iniciar sesión en un navegador web.</p>
 </div>
-            
-            <footer class="site-footer">
+        
+        <footer class="site-footer">
   <div class="footer cierralo-font-helveltica-thin" role="contentinfo">
         <div class="cierralo-main-footer cierralo-flex-colum">
             <div class="cierralo-row-one cierralo-flex-row cierralo-max-width">

@@ -43,3 +43,43 @@ $.datepicker.regional['es'] = {
   yearSuffix: ''
 };
 $.datepicker.setDefaults($.datepicker.regional['es']);
+var modal = document.getElementById('alertModal');
+var cancelModal = document.getElementById('cancelModal');
+// Get the button that opens the modal
+var btn = document.getElementById("cancelSchedule");
+var confirmCancelBtn = document.getElementById("confirmCancelBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+var closeCancel = document.getElementById("closeCancel");
+var body = document.getElementById('body');
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.classList.add('modal-open');
+  body.classList.add('modal-open');
+
+}
+confirmCancelBtn.onclick = function() {
+  modal.classList.remove('modal-open');
+  cancelModal.classList.add('modal-open');
+  body.classList.add('modal-open');
+
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.classList.remove('modal-open');
+  body.classList.remove('modal-open');
+}
+closeCancel.onclick = function() {
+  cancelModal.classList.remove('modal-open');
+  body.classList.remove('modal-open');
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal || event.target == cancelModal) {
+    modal.classList.remove('modal-open');
+    cancelModal.classList.remove('modal-open');
+    body.classList.remove('modal-open');
+  }
+}
+
+

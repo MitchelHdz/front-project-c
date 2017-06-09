@@ -108,7 +108,7 @@
             
           <li class="navbar-user-menu-item">
             
-              <a href="./dashboard.html" class="navbar-user-link medium cierralo-white-text cierralo-font-helveltica-neue">Historial de compras</a></li>
+              <a href="./dashboard.html" class="navbar-user-link medium first cierralo-white-text cierralo-font-helveltica-neue">Historial de compras</a></li>
             
           <li class="navbar-user-menu-item"><a href="./index.html" class="navbar-user-link cierralo-white-text cierralo-font-helveltica-neue">Cerrar sesión</a></li>
         </ul>
@@ -124,13 +124,13 @@
 
         
         
-          <main id="main" class="web-area">
+          <main id="main" class="margin-grey-navbar web-area">
         
         
 <div class="grey-navbar cierralo-flex-row-start">
   <a href="./dashboard.html" class="grey-navbar-link">
     
-      <div class="grey-navbar-link-box active">
+      <div class="grey-navbar-link-box">
     
       <p class="grey-navbar-link-text cierralo-purplish-grey cierralo-font-helveltica-neue">Procesos actuales de compra</p>
     </div>
@@ -157,125 +157,102 @@
     </div>
   </a>
 </div>
-<div id="content" role="main" class="cierralo-content">
-    <div id="signModal" class="modal">
-      <!-- Modal content -->
-      <div class="alert-modal-content cierralo-flex-colum">
-        <div class="modal-close-btn-container">
-          <span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
-        </div>
-        <div class="dashboard-arrow-check-circle cierralo-flex-row cursor-pointer">
-          <img src="./img/icons/shape@3x.png" alt="" class="dashboard-arrow-check-icon">
-        </div>
-        <div class="alert-modal-body">
-          <h1 class="dashboard-alert-text-one cierralo-grey-text cierralo-font-helveltica-bold letter-spacing-dot-three">Tu fecha de firma ha sido agendada</h1>
-        </div>
-        <div class="modal-footer">
-          <div class="modal-arrow-down">
+  <div id="alertModal" class="modal">
+    <!-- Modal content -->
+    <div class="alert-modal-content cierralo-flex-colum">
+      <div class="modal-close-btn-container">
+        <span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
+      </div>
+      <div class="arrow-check-circle cierralo-flex-row cursor-pointer">
+        <img src="./img/icons/shape@3x.png" alt="Realizado" class="arrow-check-icon">
+      </div>
+      <div class="alert-modal-body">
+        <h1 class="alert-text-one cierralo-grey-text cierralo-font-helveltica-bold letter-spacing-dot-three">¡Todo listo!</h1>
+        <h2 class="alert-text-two cierralo-font-helveltica-neue-light cierralo-purplish-grey letter-spacing-dot-three">Tu oferta se ha realizado con éxito</h2>
+      </div>
+      <div class="modal-footer">
+        <h2 class="alert-text-three cierralo-font-helveltica-neue-light cierralo-white-text letter-spacing-dot-three">Hemos notificado al vendedor y tendrás noticias pronto acerca de su desición</h2>
+      </div>
+    </div>
+  </div>
+  <div class="cierralo-flex-colum">
+    <div class="user-title-container grey">
+      <h1 class="user-title-center cierralo-grey-text cierralo-font-helveltica-medium">Historial de transacciones</h1>
+    </div>
+    <div class="building-offer-description cierralo-flex-row">
+      <div class="building-description-container cierralo-flex-colum">
+        <div class="building-photo-container">
+          <img src="./img/photo532577139161512309.jpg" alt="" class="building-photo-offer inline-block">
+          <div class="building-cost-container selled inline-block">
+            <p class="building-cost-text sell cierralo-font-helveltica-medium letter-spacing-dot-four cierralo-white-text no-margin-text">Venta Cerrada! en:</p>
+            <p class="building-cost-text sell cierralo-font-helveltica-neue-light letter-spacing-dot-four cierralo-white-text no-margin-text">$3,600,000</p>
           </div>
-          <h1 class="dashboard-alert-text-three cierralo-font-helveltica-neue-light cierralo-white-text letter-spacing-dot-three">En cuanto el proceso se haya completado el <br>sistema trasladará esta propiedad a tu historial de compras</h1>
+        </div>
+        <div class="building-description-services-container cierralo-flex-row">
+          <div class="service-container cierralo-flex-colum">
+            <div class="service-icon-container">
+              <img src="./img/icons/group-9@3x.png" alt="" class="service-icon">
+            </div>
+            <p class="service-text cierralo-greyish-two letter-spacing-dot-four cierralo-font-helveltica-neue-light">Departamento</p>
+          </div>
+          <div class="service-container cierralo-flex-colum">
+            <div class="service-icon-container">
+              <img src="./img/icons/page-1@3x.png" alt="" class="service-icon">
+            </div>
+            <p class="service-text cierralo-greyish-two letter-spacing-dot-four cierralo-font-helveltica-neue-light">m2</p>
+          </div>
+          <div class="service-container cierralo-flex-colum">
+            <div class="service-icon-container">
+              <img src="./img/icons/fill-1@3x.png" alt="" class="service-icon">
+            </div>
+            <p class="service-text cierralo-greyish-two letter-spacing-dot-four cierralo-font-helveltica-neue-light">2 cuartos</p>
+          </div>
+          <div class="service-container cierralo-flex-colum">
+            <div class="service-icon-container">
+              <img src="./img/icons/group-3@3x.png" alt="" class="service-icon">
+            </div>
+            <p class="service-text cierralo-greyish-two letter-spacing-dot-four cierralo-font-helveltica-neue-light">2 baños</p>
+          </div>
+          <div class="service-container cierralo-flex-colum">
+            <div class="service-icon-container">
+              <img src="./img/icons/group@3x.png" alt="" class="service-icon">
+            </div>
+            <p class="service-text cierralo-greyish-two letter-spacing-dot-four cierralo-font-helveltica-neue-light">Piso 4</p>
+          </div>
+        </div>
+      </div>
+      <div class="seller-user-container">
+        <div class="seller-user-box-photo">
+          <img src="./img/dude.png" alt="" class="seller-user-circle-photo inline-block">
+          <div class="seller-user-name-container inline-block">
+            <p class="seller-user-type cierralo-font-helveltica-medium cierralo-grey-text letter-spacing-dot-six">Propietario</p>
+            <p class="seller-user-name cierralo-font-helveltica-bold letter-spacing-dot-six cierralo-orange-text">José Martínez</p>
+          </div>
+        </div>
+        <h1 class="building-offer-street-name cierralo-purplish-grey letter-spacing-dot-six cierralo-font-helveltica-medium">Colima 228</h1>
+        <p class="building-offer-street-place cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-purplish-grey">Roma Norte</p>
+        <div class="building-information-divider">
+          
+        </div>
+        <p class="building-full-street inline-block cierralo-pinkish-grey letter-spacing-dot-six cierralo-font-helveltica-neue-light">Calle Colíma No. 228 Colonia Roma Norte,delegación Cuauhtémoc. C.P. 06700, Ciudad de México.</p>
+      </div>
+    </div>
+    <div class="green-dates-box cierralo-flex-row">
+      <img src="./img/icons/group-7@3x2.png" class="green-dates-icon">
+      <div class="green-dates-info-box">
+        <div class="green-close-date-box">
+          <p class="no-margin-text cierralo-white-text cierralo-font-helveltica-medium green-close-date-name inline-block">Fecha de Cierre!:</p>
+          <p class="no-margin-text cierralo-white-text cierralo-font-helveltica-neue-light green-close-date-value inline-block">7 de enero 2017</p>
+        </div>
+        <div class="green-delivery-date-box">
+          <p class="no-margin-text cierralo-white-text cierralo-font-helveltica-medium green-delivery-date-name inline-block">Fecha de entrega:</p>
+          <p class="no-margin-text cierralo-white-text cierralo-font-helveltica-neue-light green-delivery-date-value inline-block">6 de Febrero 2017</p>
         </div>
       </div>
     </div>
-    <div class="dashboard-header cierralo-flex-colum">
-      <h1 class="dashboard-title cierralo-font-helveltica-medium cierralo-purplish-grey-two">¡Hola Carlos!</h1>
-      <h2 class="dashboard-subtitle cierralo-font-helveltica-medium cierralo-purplish-grey-two letter-spacing-dot-three">Aún no haz realizado ninguna oferta</h2>
-    </div> 
-    <div class="dashboard-divider">
-
+    <div class="cierralo-offer-template-divider cierralo-flex-row">
     </div>
-    <div class="discover-container">
-      <h1 class="cierralo-font-helveltica-medium cierralo-purplish-grey-two dashboard-text letter-spacing-dot-three">Descubre tu próximo departamento</h1>
-    </div>
-    <a href="./buildingList.html" class="cierralo-link">
-      <button class="cierralo-font-helveltica-neue dashboard-discover-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer letter-spacing-dot-six" id="dashboardBtn">Departamentos</button>
-    </a>
-    <div class="second-dashboard-divider">
-
-    </div>
-    <div class="dashboard-body cierralo-flex-colum">
-      <h1 class="discover-title cierralo-font-helveltica-medium cierralo-purplish-grey-two">Encuentra tu propiedad ideal</h1>
-    </div>
-    <div class="discover-slider">
-      <div class="slider multiple-items">
-        <a href="./buildingDetail.html" class="no-decoration">
-          <div class="dashboard-building-container">
-            <div class="dashboard-building-photo-container inline-block">
-              <img src="./img/group-4.png" alt="" class="dashboard-building-photo-rectangle">
-              <div class="dashboard-building-label-type rent">
-                <p class="cierralo-white-text no-margin-text cierralo-font-helveltica-neue-light dashboard-building-label-text">Renta</p>
-              </div>
-            </div>
-            <div class="dashboard-building-info-container inline-block">
-              <h3 class="dashboard-building-street-name cierralo-purplish-grey cierralo-font-helveltica-medium letter-spacing-dot-six">Xomali 17</h3>
-              <p class="building-location cierralo-purplish-grey cierralo-font-helveltica-neue-light letter-spacing-dot-six">Huipulco</p>
-              <div class="building-divider">
-
-              </div>
-              <p class="building-cost cierralo-orange-two-text cierralo-font-helveltica-neue-light letter-spacing-dot-four">$10,800</p>
-            </div>
-          </div>
-        </a>
-        <a href="./buildingDetail.html" class="no-decoration">
-          <div class="dashboard-building-container">
-            <div class="dashboard-building-photo-container inline-block">
-              <img src="./img/group-4.png" alt="" class="dashboard-building-photo-rectangle">
-              <div class="dashboard-building-label-type sell">
-                <p class="cierralo-white-text no-margin-text cierralo-font-helveltica-neue-light dashboard-building-label-text">Venta</p>
-              </div>
-            </div>
-            <div class="dashboard-building-info-container inline-block">
-              <h3 class="dashboard-building-street-name cierralo-purplish-grey cierralo-font-helveltica-medium letter-spacing-dot-six">Xomali 17</h3>
-              <p class="building-location cierralo-purplish-grey cierralo-font-helveltica-neue-light letter-spacing-dot-six">Huipulco</p>
-              <div class="building-divider">
-
-              </div>
-              <p class="building-cost cierralo-orange-two-text cierralo-font-helveltica-neue-light letter-spacing-dot-four">$3,600,000</p>
-            </div>
-          </div>
-        </a>
-        <a href="./buildingDetail.html" class="no-decoration">
-          <div class="dashboard-building-container">
-            <div class="dashboard-building-photo-container inline-block">
-              <img src="./img/group-4.png" alt="" class="dashboard-building-photo-rectangle">
-              <div class="dashboard-building-label-type rent">
-                <p class="cierralo-white-text no-margin-text cierralo-font-helveltica-neue-light dashboard-building-label-text">Renta</p>
-              </div>
-            </div>
-            <div class="dashboard-building-info-container inline-block">
-              <h3 class="dashboard-building-street-name cierralo-purplish-grey cierralo-font-helveltica-medium letter-spacing-dot-six">Xomali 17</h3>
-              <p class="building-location cierralo-purplish-grey cierralo-font-helveltica-neue-light letter-spacing-dot-six">Huipulco</p>
-              <div class="building-divider">
-
-              </div>
-              <p class="building-cost cierralo-orange-two-text cierralo-font-helveltica-neue-light letter-spacing-dot-four">$10,800</p>
-            </div>
-          </div>
-        </a>
-        <a href="./buildingDetail.html" class="no-decoration">
-          <div class="dashboard-building-container">
-            <div class="dashboard-building-photo-container inline-block">
-              <img src="./img/group-4.png" alt="" class="dashboard-building-photo-rectangle">
-              <div class="dashboard-building-label-type mixed">
-                <p class="cierralo-white-text no-margin-text cierralo-font-helveltica-neue-light dashboard-building-label-text">Venta y renta</p>
-              </div>
-            </div>
-            <div class="dashboard-building-info-container inline-block">
-              <h3 class="dashboard-building-street-name cierralo-purplish-grey cierralo-font-helveltica-medium letter-spacing-dot-six">Xomali 17</h3>
-              <p class="building-location cierralo-purplish-grey cierralo-font-helveltica-neue-light letter-spacing-dot-six">Huipulco</p>
-              <div class="building-divider">
-
-              </div>
-              <p class="building-cost cierralo-orange-two-text cierralo-font-helveltica-neue-light letter-spacing-dot-four">$3,600,000 / $10,800</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="cierralo-pre-footer-divider cierralo-flex-row">
-
-    </div>
-</div>
+  </div>
 
         </main>
         
@@ -338,8 +315,8 @@
         
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
         
-    <script src="./js/dashboard.js"></script>
-    
+        <script src="./js/makeOffer.js"></script>
+        
     <script src="./js/navbar.js"></script>
     
 </body>

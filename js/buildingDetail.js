@@ -215,12 +215,42 @@ closeSchedule.onclick = function() {
   scheduleModal.classList.remove('modal-open');
   body.classList.remove('modal-open');
 }
+var offerModal = document.getElementById('offerModal');
+var alertModal = document.getElementById('alertModal');
+// Get the button that opens the modal
+var offerBtn = document.getElementById("offerBtn");
+var finishSchedule = document.getElementById("finishSchedule");
+var closeAlert = document.getElementById("closeAlert");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on the button, open the modal 
+offerBtn.onclick = function() {
+  offerModal.classList.add('modal-open');
+  body.classList.add('modal-open');
 
+}
+finishSchedule.onclick = function() {
+  scheduleModal.classList.remove('modal-open');
+  alertModal.classList.add('modal-open');
+  body.classList.add('modal-open');
+
+}
+closeAlert.onclick = function() {
+  alertModal.classList.remove('modal-open');
+  body.classList.remove('modal-open');
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  offerModal.classList.remove('modal-open');
+  body.classList.remove('modal-open');
+}
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == scheduleModal) {
+  if (event.target == scheduleModal || event.target == offerModal || event.target == alertModal) {
     scheduleModal.classList.remove('modal-open');
+    offerModal.classList.remove('modal-open');
     body.classList.remove('modal-open');
   }
 }
+
 $('body').addClass('onload');

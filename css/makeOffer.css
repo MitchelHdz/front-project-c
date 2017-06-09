@@ -32,7 +32,7 @@
 	padding-top: 30px;
 }
 .building-photo-offer{
-	width: 401px;
+	width: 316px;
 	height: 167px;
 }
 .building-photo-container{
@@ -43,6 +43,12 @@
 	height: 30px;
 	background-color: #f36b24;
 }
+.building-cost-container.sell{
+	width: 76px;
+	height: 30px;
+	background-color: #f36b24;
+	padding-top: 2px;
+}
 .building-cost-text{
 	margin: 0px;
 	padding-top: 7px;
@@ -51,6 +57,15 @@
 	padding-right: 4px;
 	font-size: 12px;
 	text-align: center;
+}
+.building-cost-text.sell{
+	margin: 0px;
+	padding-left: 8px;
+	padding-top: 0px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	font-size: 12px;
+	text-align: left;
 }
 .building-cost-container{
 	position: absolute;
@@ -61,15 +76,15 @@
 	-webkit-box-shadow:inset 0px 0px 0px 1px #e5e5e5;
 	-moz-box-shadow:inset 0px 0px 0px 1px #e5e5e5;
 	box-shadow:inset 0px 0px 0px 1px #e5e5e5;
-	width: 401px;
+	width: 316px;
 	padding-top: 25px;
 	padding-bottom: 30px;
 	margin-top: -4px;
 }
 .service-container{
 	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .service-icon-container{
 	height: 25px;
@@ -91,30 +106,38 @@
 }
 .seller-user-container{
 	padding-left: 55px;
+	height: 263px;
+    box-sizing: border-box;
+    border: solid 1px #e5e5e5;
+    margin-left: -1px;
+    padding-top: 21px;
 }
 .seller-user-circle-photo{
-	width: 90px;
-	height: 90px;
+	width: 53px;
+	height: 53px;
 }
 .seller-user-name-container {
 	vertical-align: top;
-	padding-left: 22px;
+	padding-left: 15px;
 }
 .seller-user-type{
-	font-size: 17px;
+	font-size: 12px;
 	margin: 0px;
-	padding-top: 22px;
+	padding-top: 11px;
 	padding-bottom: 2px;
+}
+.sell-user-name{
+	font-size: 18px;
 }
 .building-offer-street-name{
 	margin: 0px;
-	font-size: 26px;
+	font-size: 21px;
 	padding-top: 10px;
 	padding-bottom: 5px;
 }
 .building-offer-street-place{
 	margin: 0;
-	font-size: 15px;
+	font-size: 13px;
 	padding-bottom: 18px;
 }
 .building-information-divider{
@@ -124,8 +147,8 @@
 	margin-bottom: 13px;
 }
 .building-full-street{
-	width: 325px;
-	font-size: 16px;
+	width: 292px;
+	font-size: 13px;
 }
 .cierralo-flex-row-flex-start{
 	display: flex;
@@ -166,6 +189,8 @@
 	padding-top: 53px;
 	line-height: 23px;
 	font-size: 17px;
+	width: 320px;
+	text-align: center;
 }
 .terms-tiny-text{
 	padding-top: 28px;
@@ -392,9 +417,10 @@ input::-webkit-inner-spin-button {
 	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 .offer-subtitle{
-	padding-top: 25px;
+	padding-top: 44px;
 	width: 315px;
 	text-align: center;
+	font-size: 17px;
 }
 .offer-tiny-text{
 	padding-top: 28px;
@@ -598,4 +624,46 @@ input::-webkit-inner-spin-button {
 }
 #body.modal-open {
 	overflow: hidden;
+}
+.terms-mini-text{
+	font-size: 11px;
+	padding-left: 15px;
+	padding-top: 20px;
+}
+.user-title-container.grey{
+	padding-top: 76px;
+}
+.building-cost-container.selled {
+    width: 86px;
+    height: 49px;
+    background-color: #f36b24;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+.green-delivery-date-name{
+	font-size: 15px;
+}
+.green-delivery-date-value{
+	font-size: 15px;
+}
+.green-close-date-name{
+	font-size: 15px;
+}
+.green-close-date-value{
+	font-size: 15px;
+}
+.green-dates-icon{
+	width: 30px;
+	height: 30px;
+}
+.green-dates-info-box{
+	padding-left: 15px;
+}
+.green-dates-box{
+	background-color: #7ed321;
+	width: 664px;
+	box-sizing: border-box;
+	height: 67px;
+	justify-content: flex-start !important;
+	padding-left: 25px;
 }

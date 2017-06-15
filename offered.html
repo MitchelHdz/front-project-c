@@ -109,7 +109,7 @@
             
           <li class="navbar-user-menu-item">
             
-              <a href="./dashboard.html" class="navbar-user-link medium first cierralo-white-text cierralo-font-helveltica-neue">Historial de compras</a></li>
+              <a href="./dashboard.html" class="navbar-user-link medium cierralo-white-text cierralo-font-helveltica-neue">Historial de compras</a></li>
             
           <li class="navbar-user-menu-item"><a href="./index.html" class="navbar-user-link cierralo-white-text cierralo-font-helveltica-neue">Cerrar sesión</a></li>
         </ul>
@@ -158,6 +158,12 @@
     </div>
   </a>
 </div>
+<div class="banner-container cierralo-flex-row">
+  <div class="orange-banner-rejected-box cierralo-flex-row">
+    <img src="./img/icons/group-10@3x.png" class="orange-banner-rejected-icon">
+    <p class="orange-banner-rejected-text cierralo-white-text letter-spacing-dot-six cierralo-font-helveltica-neue-light no-margin-text">En espera de respuesta por parte del propietario</p>
+  </div>
+</div>
   <div id="alertModal" class="modal">
     <!-- Modal content -->
     <div class="alert-modal-content cierralo-flex-colum">
@@ -178,14 +184,17 @@
   </div>
   <div class="cierralo-flex-colum">
     <div class="user-title-container grey">
-      <h1 class="user-title-center cierralo-grey-text cierralo-font-helveltica-medium">Historial de transacciones</h1>
+      <h1 class="user-title-center cierralo-grey-text cierralo-font-helveltica-medium">Oferta realizada</h1>
+    </div>
+    <div class="cierralo-top-divider cierralo-flex-row">
+
     </div>
     <div class="building-offer-description cierralo-flex-row">
       <div class="building-description-container cierralo-flex-colum">
         <div class="building-photo-container">
           <img src="./img/photo532577139161512309.jpg" alt="" class="building-photo-offer inline-block">
-          <div class="building-cost-container selled inline-block">
-            <p class="building-cost-text sell cierralo-font-helveltica-medium letter-spacing-dot-four cierralo-white-text no-margin-text">Venta Cerrada! en:</p>
+          <div class="building-cost-container sell inline-block">
+            <p class="building-cost-text sell cierralo-font-helveltica-medium letter-spacing-dot-four cierralo-white-text no-margin-text">Venta</p>
             <p class="building-cost-text sell cierralo-font-helveltica-neue-light letter-spacing-dot-four cierralo-white-text no-margin-text">$3,600,000</p>
           </div>
         </div>
@@ -238,16 +247,117 @@
         <p class="building-full-street inline-block cierralo-pinkish-grey letter-spacing-dot-six cierralo-font-helveltica-neue-light">Calle Colíma No. 228 Colonia Roma Norte,delegación Cuauhtémoc. C.P. 06700, Ciudad de México.</p>
       </div>
     </div>
-    <div class="green-dates-box cierralo-flex-row">
-      <img src="./img/icons/group-7@3x2.png" class="green-dates-icon">
-      <div class="green-dates-info-box">
-        <div class="green-close-date-box">
-          <p class="no-margin-text cierralo-white-text cierralo-font-helveltica-medium green-close-date-name inline-block">Fecha de Cierre!:</p>
-          <p class="no-margin-text cierralo-white-text cierralo-font-helveltica-neue-light green-close-date-value inline-block">7 de enero 2017</p>
+    <div class="second-section cierralo-flex-row-flex-start">
+      <div class="grey-section-left-half">
+        <div class="grey-section-left-half-padding offered cierralo-flex-colum">
+          <h1 class="terms-title cierralo-font-helveltica-bold line-height-fifty-six cierralo-grey-text">Términos del propietario</h1>
+          <div class="price-container">
+            <p class="price-text inline-block cierralo-deep-orange-two cierralo-font-helveltica-bold">Precio</p>
+            <p class="price-value inline-block cierralo-grey-text cierralo-font-helveltica-medium">$ 7,000,456.00</p>
+          </div>
+          <p class="terms-subtitle cierralo-grey-text cierralo-font-helveltica-medium">A continuación se muestra el tipo <br>de estructura de venta de la propiedad </p>
+          <p class="terms-tiny-text cierralo-purple-grey cierralo-font-helveltica-neue-light">Si deseas saber más de la estructura
+  de la propiedad <a href="./buildingDetail.html" class="terms-link-text cierralo-purple-grey cursor-pointer">haz click aquí</a></p>
+          <div class="terms-options-container cierralo-flex-row">
+            <div class="terms-box">
+              <div class="cierralo-flex-colum with-domain-box active cursor-pointer" id="withGrey">
+                <p class="with-domain-word cierralo-warm-grey cierralo-font-helveltica-bold letter-spacing-dot-one">CON</p>
+                <p class="with-domain-text cierralo-warm-grey cierralo-font-helveltica-neue-light letter-spacing-dot-one">reserva de dominio</p>
+              </div>
+              <p class="no-margin-text cierralo-font-helveltica-neue cierralo-warm-grey terms-mini-text">Con plazo de entrega</p>
+            </div>
+            <div class="terms-box">
+              <div class="cierralo-flex-colum without-domain-box cursor-pointer" id="withoutGrey">
+                <p class="without-domain-word cierralo-warm-grey cierralo-font-helveltica-bold letter-spacing-dot-one">SIN</p>
+                <p class="without-domain-text cierralo-warm-grey cierralo-font-helveltica-neue-light letter-spacing-dot-one">reserva de dominio</p>
+              </div>
+              <p class="no-margin-text cierralo-font-helveltica-neue cierralo-warm-grey terms-mini-text">Entrga inmediata</p>
+            </div>
+          </div>
+          <div class="hook-container cierralo-flex-row">
+            <p class="hook-text letter-spacing-dot-one cierralo-grey-text cierralo-font-helveltica-medium" id="hook-with">Enganche</p>
+            <p class="hook-text-large letter-spacing-dot-one cierralo-grey-text cierralo-font-helveltica-medium hidden" id="hook-without">Anticipo a la firma de escritura<br></p>
+            <div class="hook-divider">
+              
+            </div>
+            <div class="hook-value-container">
+              <p class="hook-percentage cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">20%</p>
+              <p class="hook-cost-value cierralo-pinkish-grey letter-spacing-dot-one cierralo-font-helveltica-medium">$500,000 MXN</p>
+            </div>
+          </div>
+          <div class="sign-date-container cierralo-flex-row">
+            <p class="sign-date-text cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">Fecha de firma de escritura 
+  y anticipo, no antes del</p>
+            <div class="sign-date-divider">
+              
+            </div>
+            <p class="sign-date-value cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">28 / 06 / 17</p>
+          </div>
+          <div class="delivery-date-container cierralo-flex-row" id="delivery-grey-without">
+            <p class="delivery-date-text cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">Fecha de entrega del departamento
+   y liquidación, no antes del</p>
+            <div class="sign-date-divider">
+              
+            </div>
+            <p class="delivery-date-value cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">28 / 06 / 17</p>
+          </div>
         </div>
-        <div class="green-delivery-date-box">
-          <p class="no-margin-text cierralo-white-text cierralo-font-helveltica-medium green-delivery-date-name inline-block">Fecha de entrega:</p>
-          <p class="no-margin-text cierralo-white-text cierralo-font-helveltica-neue-light green-delivery-date-value inline-block">6 de Febrero 2017</p>
+      </div>
+      <div class="white-section-right-half">
+        <div class="white-section-right-half-padding cierralo-flex-colum">
+          <h1 class="terms-title cierralo-font-helveltica-bold line-height-fifty-six cierralo-grey-text">Ofertaste</h1>
+          <div class="offer-input-container">
+            <p class="offer-value-text cierralo-orange-text cierralo-font-helveltica-bold">Precio de contraoferta</p>
+            <input type="number" name="offer" value="$ 7,000,456.00" placeholder="$ 7,000,456.00" class="input-offer-value cierralo-font-helveltica-medium cierralo-grey-text">
+          </div>
+          <p class="offer-subtitle cierralo-grey-text cierralo-font-helveltica-medium">A continuación se muestra el tipo de estructura de venta de la propiedad</p>
+          <p class="offer-tiny-text cierralo-purple-grey cierralo-font-helveltica-neue-light">Si deseas saber más de la estructura
+  de la propiedad <a href="#" class="terms-link-text cierralo-purple-grey cursor-pointer">haz click aquí</a></p>
+          <div class="terms-options-offer-container cierralo-flex-row">
+            <div class="terms-box">
+              <div class="cierralo-flex-colum with-domain-box active cursor-pointer" id="withWhite">
+                <p class="with-domain-word cierralo-warm-grey cierralo-font-helveltica-bold letter-spacing-dot-one">CON</p>
+                <p class="with-domain-text cierralo-warm-grey cierralo-font-helveltica-neue-light letter-spacing-dot-one">reserva de dominio</p>
+              </div>
+              <p class="no-margin-text cierralo-font-helveltica-neue cierralo-warm-grey terms-mini-text">Con plazo de entrega</p>
+            </div>
+            <div class="terms-box">
+              <div class="cierralo-flex-colum without-domain-box cursor-pointer" id="withoutWhite">
+                <p class="without-domain-word cierralo-warm-grey cierralo-font-helveltica-bold letter-spacing-dot-one">SIN</p>
+                <p class="without-domain-text cierralo-warm-grey cierralo-font-helveltica-neue-light letter-spacing-dot-one">reserva de dominio</p>
+              </div>
+              <p class="no-margin-text cierralo-font-helveltica-neue cierralo-warm-grey terms-mini-text">Entrga inmediata</p>
+            </div>
+          </div>
+          <div class="hook-offer-container" id="hook-offer-container">
+            <div class="hook-offer-divider inline-block">
+              
+            </div>
+            <div class="hook-offer-value-container inline-block" id="hook-container-without">
+              <input type="text" name="" value="20%" placeholder="" id="offerPercentage" class="offer-percentage make-offer-input cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">
+            </div>
+            <p class="hook-offer-value cierralo-white-grey letter-spacing-dot-one cierralo-font-helveltica-medium inline-block hidden" id="hook-value-without">" 0% "</p>
+          </div>
+          <div class="sign-date-offer-container" id="sign-date-container">
+            <div class="sign-date-offer-divider inline-block">
+              
+            </div>
+            <div class="sign-date-value-container hook-offer-value-container inline-block" id="date-with">
+              <input type="text" name="" value="28 / 06 / 17" placeholder="" class="make-offer-input cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">
+            </div>
+            <div class="sign-date-input-container inline-block hidden" id="date-without">
+              <input type="text" name="" value="28 / 06 / 17" placeholder="" class="offer-percentage make-offer-input cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">
+            </div>
+          </div>
+          <div class="delivery-date-offer-container" id="delivery-container-without">
+            <div class="sign-date-offer-divider inline-block">
+              
+            </div>
+            <div class="delivery-date-value-container hook-offer-value-container inline-block" id="delivery-with">
+              <input type="text" name="" value="28 / 06 / 17" placeholder="" class="offer-percentage make-offer-input cierralo-grey-text letter-spacing-dot-one cierralo-font-helveltica-medium">
+            </div>
+            <p class="delivery-date-value cierralo-white-grey letter-spacing-dot-one cierralo-font-helveltica-medium inline-block hidden" id="delivery-without">" 28 / 06 / 17 "</p>
+          </div>
         </div>
       </div>
     </div>
@@ -256,11 +366,6 @@
   </div>
 
         </main>
-        
-        <div class="mobile-alert-container cierralo-flex-colum">
-	<h1 class="mobile-alert-title cierralo-orange-text letter-spacing-dot-six cierralo-font-helveltica-bold">¡Lo sentimos!</h1>
-	<p class="mobile-alert-text cierralo-purplish-grey letter-spacing-dot-six cierralo-font-helveltica-neue-light">Para poder ver esta sección es necesario iniciar sesión en un navegador web.</p>
-</div>
         
         <footer class="site-footer">
   <div class="footer cierralo-font-helveltica-thin" role="contentinfo">

@@ -48,18 +48,18 @@ $.ajax({
       if(data.Propiedades[i].typeContract == '1'){
         var dudeInfo = '<div class="cierralo-inner-container"><div class="cierralo-all-face cierralo-font-helveltica-thin"><div class="cierralo-face-rounder" style="background: url(\'./img/dude.png\')"></div><p class="owner-name">José</p></div><div class="cierralo-all-fav"><i class="fa fa-heart-o icon-love" aria-hidden="true"></i></div><div class="cierralo-all-price sell cierralo-font-helveltica-neue-light"><b>Venta</b><br/>'+ data.Propiedades[i].precio + '</div>'+ services +'</div>';
         sliderRangeValue.push(data.Propiedades[i].precio.substring(1, 4));
-        var buildBox = '<a class="cursor-pointer building-block-link" href="./buildingDetail.html?build='+i+'"><div class="cierralo-building-feature sell" style="background: url(\'https://habita.la/images/complete/28b972506123d81bd456afa35b2c37bc.JPG\');">'+ dudeInfo +'</div></a>';
+        var buildBox = '<a class="cursor-pointer building-block-link" href="./buildingDetail.html?build='+i+'"><div class="cierralo-building-feature sell" style="background: url(\'./img/photo532577139161512309.jpg\');">'+ dudeInfo +'</div></a>';
       }
       else if(data.Propiedades[i].typeContract == '2'){
         var dudeInfo = '<div class="cierralo-inner-container"><div class="cierralo-all-face cierralo-font-helveltica-thin"><div class="cierralo-face-rounder" style="background: url(\'./img/dude.png\')"></div><p class="owner-name">José</p></div><div class="cierralo-all-fav"><i class="fa fa-heart-o icon-love" aria-hidden="true"></i></div><div class="cierralo-all-price rent cierralo-font-helveltica-neue-light"><b>Renta mensual</b><br/>$'+ data.Propiedades[i].rent + '</div>'+ services +'</div>';
         sliderRangeValue.push(data.Propiedades[i].rent);
-        var buildBox = '<a class="cursor-pointer building-block-link" href="./buildingDetail.html?build='+i+'"><div class="cierralo-building-feature rent" style="background: url(\'https://habita.la/images/complete/28b972506123d81bd456afa35b2c37bc.JPG\');">'+ dudeInfo +'</div></a>';
+        var buildBox = '<a class="cursor-pointer building-block-link" href="./buildingDetail.html?build='+i+'"><div class="cierralo-building-feature rent" style="background: url(\'./img/photo532577139161512309.jpg\');">'+ dudeInfo +'</div></a>';
       }
 
       else if(data.Propiedades[i].typeContract == '3'){
         var dudeInfo = '<div class="cierralo-inner-container"><div class="cierralo-all-face cierralo-font-helveltica-thin"><div class="cierralo-face-rounder" style="background: url(\'./img/dude.png\')"></div><p class="owner-name">José</p></div><div class="cierralo-all-fav"><i class="fa fa-heart-o icon-love" aria-hidden="true"></i></div><div class="cierralo-all-price mixed cierralo-font-helveltica-neue-light"><b>Venta y renta mensual</b><br/>'+ data.Propiedades[i].precio + ' | $'+ data.Propiedades[i].rent + '</div>'+ services +'</div>';
         sliderRangeValue.push(data.Propiedades[i].precio.substring(1, 4));
-        var buildBox = '<a class="cursor-pointer building-block-link" href="./buildingDetail.html?build='+i+'"><div class="cierralo-building-feature mixed" style="background: url(\'https://habita.la/images/complete/28b972506123d81bd456afa35b2c37bc.JPG\');">'+ dudeInfo +'</div></a>';
+        var buildBox = '<a class="cursor-pointer building-block-link" href="./buildingDetail.html?build='+i+'"><div class="cierralo-building-feature mixed" style="background: url(\'./img/photo532577139161512309.jpg\');">'+ dudeInfo +'</div></a>';
       }
       $('.cierralo-all-buildings').append(buildBox);
     }

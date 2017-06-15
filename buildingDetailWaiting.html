@@ -131,7 +131,7 @@
 <div class="grey-navbar cierralo-flex-row-start">
   <a href="./dashboard.html" class="grey-navbar-link">
     
-      <div class="grey-navbar-link-box active">
+      <div class="grey-navbar-link-box">
     
       <p class="grey-navbar-link-text cierralo-purplish-grey cierralo-font-helveltica-neue">Procesos actuales de compra</p>
     </div>
@@ -159,9 +159,12 @@
   </a>
 </div>
 <div class="banner-container cierralo-flex-row">
-  <div class="orange-banner-rejected-box cierralo-flex-row">
-    <img src="./img/icons/page-1@3x3.png" class="orange-banner-rejected-icon">
-    <p class="orange-banner-rejected-text cierralo-white-text letter-spacing-dot-six cierralo-font-helveltica-neue-light no-margin-text">Rechazado, por favor ponte en contacto con el propietario para más información</p>
+  <div class="orange-banner-offer-box">
+    <p class="orange-banner-offer-text cierralo-white-text cierralo-font-helveltica-medium no-margin-text">Ofertaste: $5,000,000.00</p>
+  </div>
+  <div class="orange-banner-wait-box cierralo-flex-row">
+    <p class="orange-banner-wait-text cierralo-white-text letter-spacing-dot-six cierralo-font-helveltica-neue-light no-margin-text">Por favor espera</p>
+    <img src="./img/icons/group-10@3x.png" class="orange-banner-wait-icon">
   </div>
 </div>
 <style type="text/css">
@@ -176,6 +179,45 @@
 <div class="building-header">
   <div class="building-parallax cursor-pointer openGalleryModal" id="openGalleryModal" imageSrc="./img/photo532577139161512309.jpg">
     
+  </div>
+</div>
+<div id="alertModal" class="modal">
+  <!-- Modal content -->
+  <div class="alert-modal-content cierralo-flex-colum">
+    <div class="modal-close-btn-container" id="closeAlert">
+      <span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
+    </div>
+    <div class="arrow-check-circle middle cierralo-flex-row cursor-pointer">
+      <img src="./img/icons/shape@3x.png" alt="Realizado" class="arrow-check-icon">
+    </div>
+    <div class="alert-modal-body">
+      <h1 class="alert-text-one cierralo-grey-text cierralo-font-helveltica-bold letter-spacing-dot-three">Solicitud exitosa</h1>
+      <h2 class="alert-text-two cierralo-font-helveltica-neue-light cierralo-purplish-grey letter-spacing-dot-three">Tu solicitud de agendación se le ha <br>enviado al propietario</h2>
+    </div>
+    <div class="modal-footer success">
+      <div class="modal-arrow-down">
+      </div>
+      <h2 class="alert-text-three cierralo-font-helveltica-neue-light cierralo-white-text letter-spacing-dot-three">Tendrás noticias pronto para confirmar la visita.</h2>
+    </div>
+  </div>
+</div>
+<div id="offerModal" class="modal">
+  <!-- Modal content -->
+  <div class="alert-modal-content schedule cierralo-flex-colum">
+    <div class="modal-close-btn-container">
+      <span class="close cierralo-font-helveltica-neue-light"><img src="./img/icons/close-modal.png" class="close-modal-img"></span>
+    </div>
+    <div class="alert-modal-body offer">
+      <h2 class="alert-text-two cierralo-font-helveltica-neue-light cierralo-white-text letter-spacing-dot-three">¿Qué deseas hacer con la propiedad?</h2>
+    </div>
+    <div class="modal-footer offer">
+      <a href="./makeOffer.html" class="no-decoration">
+        <button class="cierralo-font-helveltica-neue offer-sell-it-btn cierralo-btn-primary cierralo-remove-margin cursor-pointer inline-block hover-btn-orange-lighter" id="closeItButton">Realizar oferta de venta</button>
+      </a>
+      <a href="./scheduling.html" class="no-decoration">
+        <button class="cierralo-font-helveltica-neue offer-rent-it-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer inline-block hover-btn-orange" id="closeItButton">Realizar oferta de renta</button>
+      </a>
+    </div>
   </div>
 </div>
 <div id="galleryModal" class="modal">
@@ -239,7 +281,7 @@
       <div class="credential-text-box">
         <p class="credential-title cierralo-font-helveltica-medium cierralo-purplish-grey-two letter-spacing-dot-three">Identificación Oficial</p>
         <p class="credential-text cierralo-font-helveltica-neue cierralo-warm-grey">Para agendar una visita necesitamos que mandes tu identificación oficial escaneada. Puede ser IFE, pasaporte o licencia.</p>
-        <a href="./schedule.html" class="cierralo-link">
+        <a href="#" class="cierralo-link" id="finishSchedule">
           <div class="credential-button cursor-pointer">
             <p class="credential-button-text cierralo-white-text letter-spacing-dot-six cierralo-font-helveltica-neue">Agendar </p>
           </div>
@@ -337,7 +379,7 @@
           </div>
         </div>
         <div class="building-buttons-container">
-          <a href="./login.html"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-make-offer-building-btn cierralo-btn-primary cursor-pointer hover-btn-orange-lighter rejected">Realizar oferta</button></a>
+          <a href="#" id="offerBtn"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-make-offer-building-btn cierralo-btn-primary cursor-pointer hover-btn-orange-lighter">Realizar oferta</button></a>
           <a href="#" id="openModal"><button class="cierralo-font-helveltica-neue-light letter-spacing-dot-six cierralo-date-building-btn cierralo-btn-secondary cursor-pointer hover-btn-orange">Agendar cita</button></a>
         </div>
       </div>

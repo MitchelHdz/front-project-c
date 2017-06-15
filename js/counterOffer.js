@@ -1,25 +1,41 @@
 // Get the modal
 var alertModal = document.getElementById('alertModal');
+var cancelOffer = document.getElementById('cancelOffer');
+var acceptCounterOffer = document.getElementById('acceptCounterOffer');
 
 // Get the button that opens the modal
 var offerBtn = document.getElementById("offerButton");
-var closeItBtn = document.getElementById("closeItButton");
+var cancelOfferBtn = document.getElementById("cancelOfferBtn");
+var acceptClose = document.getElementById("acceptClose");
+var closeCounter = document.getElementById("closeCounter");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 var body = document.getElementById('body');
+var cancelBtn = document.getElementById("cancelBtn");
+var acceptBtn = document.getElementById("acceptBtn");
 // When the user clicks on the button, open the modal 
 offerBtn.onclick = function() {
 	alertModal.classList.add('modal-open');
 	console.log(body);
 	body.classList.add('modal-open');
 }
-closeItBtn.onclick = function() {
-	alertModal.classList.add('modal-open');
+acceptBtn.onclick = function() {
+	acceptCounterOffer.classList.add('modal-open');
 	body.classList.add('modal-open');
 }
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+cancelBtn.onclick = function() {
+	cancelOffer.classList.add('modal-open');
+	body.classList.add('modal-open');
+}
+acceptClose.onclick = function() {
+	acceptCounterOffer.classList.remove('modal-open');
+	body.classList.remove('modal-open');
+}
+cancelOfferBtn.onclick = function() {
+	cancelOffer.classList.remove('modal-open');
+	body.classList.remove('modal-open');
+}
+closeCounter.onclick = function() {
 	alertModal.classList.remove('modal-open');
 	body.classList.remove('modal-open');
 }

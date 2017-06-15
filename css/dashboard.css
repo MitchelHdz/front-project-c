@@ -8,6 +8,9 @@
 .dashboard-header{
 	padding-top: 180px;
 }
+.dashboard-sell-header{
+  padding-top: 100px;
+}
 .dashboard-divider {
     border-bottom: 1px solid #e5e5e5;
     height: 1px;
@@ -248,6 +251,104 @@
   font-size: 12px;
   padding-left: 8px;
   padding-top: 2px;
+}
+.dashboard-grey-section{
+  width: 100%;
+  background-color: #f6f6f6;
+  margin-top: 70px;
+  padding-bottom: 20px;
+}
+.dashboard-white-section{
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.section-title-text{
+  font-size: 18.5px;
+}
+.section-title-box{
+  padding-top: 50px;
+  padding-left: 66px;
+  display: flex;
+  flex-direction: row;
+}
+.dashboard-info-dot {
+    width: 24px;
+    height: 24px;
+    color: #ffffff;
+    background-color: #f69718;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    font-size: 11px;
+    margin-right: 12px;
+    position: relative;
+}
+.dashboard-table-title-text{
+  font-size: 16.5px;
+}
+.dashboard-titles-row{
+  align-items:flex-start;
+  padding-top: 20px;
+  padding-right: 250px;
+  border-bottom: solid 1px #e5e5e5;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+.dashboard-table-title-box{
+  width: 150px;
+}
+.dashboard-item-date{
+  font-size: 14.5px;
+  width: 95px;
+}
+.dashboard-item-box{
+  width: 150px;
+  justify-content: flex-start;
+}
+.dashboard-item-box.large{
+  width: 170px;
+  justify-content: flex-start;
+}
+.dashboard-item-box.button-box{
+  padding-left: 50px;
+}
+.dashboard-tinny-info-dot {
+    width: 14px;
+    height: 14px;
+    color: #ffffff;
+    background-color: #f69718;
+    text-align: center;
+    padding-top: 2px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    font-size: 9px;
+    margin-right: 12px;
+    position: relative;
+}
+.cierralo-dashboard-open-btn {
+    width: 118px;
+    height: 39px;
+    border-radius: 100px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    padding: 11px 23px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.dashboard-item-list{
+  padding-right: 30px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.dashboard-icon{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
 @media only screen and (max-width: 1030px){
   .dashboard-building-container{

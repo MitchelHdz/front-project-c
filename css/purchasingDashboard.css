@@ -1,0 +1,10 @@
+.purchasing-dashboard-header{
+  padding-top: 58px;
+  padding-bottom: 76px;
+}
+.dashboard-body.grey{
+	width: 100%;
+	background-color: #f6f6f6;
+	box-sizing: border-box;
+	height: 454px;
+}

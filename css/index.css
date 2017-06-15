@@ -335,6 +335,8 @@
     -webkit-transition:: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
+    text-align: right;
+    padding-right: 15px;
 }
 .search-bar-button:hover{
     background: #F7971C;
@@ -342,7 +344,8 @@
 }
 .search-icon-box{
     position: absolute;
-    left: 10px;
+    left: 19px;
+    top: 36%;
 }
 .search-icon-bar{
     width: 13px;

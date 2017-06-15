@@ -309,7 +309,7 @@
 	text-align: right;
 	width: 149px;
 	margin: 0px;
-	margin-top: -40px;
+	margin-top: -22px;
 }
 .hook-divider{
 	border-bottom: 1px solid #e5e5e5;
@@ -388,6 +388,8 @@
 	padding: 11px 23px;
 	margin-top: 75px;
 	margin-bottom: 54px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .grey-section-left-half-padding{
 	padding-left: 15%;
@@ -482,6 +484,17 @@ input::-webkit-inner-spin-button {
 	color: white;
 	margin:0;
 	padding: 11px 23px;
+	margin-top: 22px;
+	margin-bottom: 54px;
+}
+.cierralo-counteroffer-btn {
+	width: 118px;
+	height: 47px;
+	border-radius: 100px;
+	border: none;
+	font-size: 15px;
+	color: white;
+	margin:0;
 	margin-top: 22px;
 	margin-bottom: 54px;
 }
@@ -666,4 +679,10 @@ input::-webkit-inner-spin-button {
 	height: 67px;
 	justify-content: flex-start !important;
 	padding-left: 25px;
+}
+.grey-section-left-half-padding.offered{
+	padding-bottom: 85px;
+}
+.alert-text-three.padding-bottom-button{
+	padding-bottom: 50px;
 }

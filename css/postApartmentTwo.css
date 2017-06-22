@@ -101,8 +101,8 @@
 	width: 168px;
 	height: 236px;
 	background-color: #f3f3f4;
-	margin-left: 9px;
-	margin-right: 9px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 .dropzone-upload-text{
 	font-size: 14px;
@@ -187,4 +187,7 @@
   padding-top: 10px;
   text-align: center;
   box-sizing: border-box;
+}
+.absolute-dropzone{
+	position: absolute;
 }

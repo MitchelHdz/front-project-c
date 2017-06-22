@@ -588,3 +588,19 @@
     padding-bottom: 66px;
     padding-top: 47px;
 }
+.dropzone.credentials.dz-started{
+	padding: 0px;
+}
+.dropzone.credentials.dz-started .dz-preview.dz-image-preview{
+	background-color: transparent;
+	margin: 0px;
+}
+.dropzone.credentials.dz-started .dz-preview .dz-image {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 115px;
+    height: 95px;
+    position: relative;
+    display: block;
+    z-index: 10;
+}

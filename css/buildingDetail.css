@@ -604,3 +604,11 @@
     display: block;
     z-index: 10;
 }
+.alert-modal-content.schedule{
+	width: 424px;
+}
+
+.hour-silder-icon-box{
+    margin-right: -35px;
+    padding-left: 35px;
+}

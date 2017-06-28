@@ -176,6 +176,10 @@
 .price-container{
 	padding-top: 37px;
 }
+.price-container-counter{
+	padding-top: 10px;
+	text-align: center;
+}
 .price-text{
 	font-size: 20px;
 	line-height: 28px;
@@ -184,6 +188,11 @@
 .price-value{
 	font-size: 20px;
 	line-height: 28px;
+}
+.price-value-counter {
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 5px;
 }
 .terms-subtitle{
 	padding-top: 53px;
@@ -194,6 +203,13 @@
 }
 .terms-tiny-text{
 	padding-top: 28px;
+	font-size: 12px;
+	line-height: 14px;
+	width: 214px;
+	text-align: center;
+}
+.terms-tiny-text-counter{
+	padding-top: 22px;
 	font-size: 12px;
 	line-height: 14px;
 	width: 214px;

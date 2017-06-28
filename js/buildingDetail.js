@@ -221,6 +221,7 @@ var alertModal = document.getElementById('alertModal');
 var offerBtn = document.getElementById("offerBtn");
 var finishSchedule = document.getElementById("finishSchedule");
 var closeAlert = document.getElementById("closeAlert");
+var closeOfferModal = document.getElementById("closeOfferModal");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal 
@@ -237,6 +238,10 @@ finishSchedule.onclick = function() {
 }
 closeAlert.onclick = function() {
   alertModal.classList.remove('modal-open');
+  body.classList.remove('modal-open');
+}
+closeOfferModal.onclick = function() {
+  offerModal.classList.remove('modal-open');
   body.classList.remove('modal-open');
 }
 // When the user clicks on <span> (x), close the modal

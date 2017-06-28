@@ -2,6 +2,11 @@
 	padding-top: 155px;
 }
 .edit-contact-mail{
+	font-size: 17px;
+	line-height: 22px;
+	letter-spacing: -0.1px;
+}
+.edit-contact-mail-link{
 	font-size: 12px;
 	line-height: 22px;
 	letter-spacing: -0.1px;
@@ -18,10 +23,14 @@
 	padding-top: 6px;
 }
 .profile-edit-info-box{
-	width: 165px;
+	width: 201px;
 }
 .edit-profile-link{
 	text-decoration: none;
+}
+.edit-profile-link-orange{
+	text-decoration: none;
+	border-bottom: solid 1px #e66700;
 }
 .edit-profile-divider{
 	border-bottom: 1px solid #e5e5e5;
